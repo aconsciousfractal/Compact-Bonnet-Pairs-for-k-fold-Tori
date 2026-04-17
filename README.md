@@ -50,8 +50,8 @@
 
 ```bash
 # Clone
-git clone https://github.com/aconsciousfractal/bonnet-pairs.git
-cd bonnet-pairs
+git clone https://github.com/aconsciousfractal/Compact-Bonnet-Pairs-for-k-fold-Tori.git
+cd Compact-Bonnet-Pairs-for-k-fold-Tori
 
 # Create environment (Python ≥ 3.10)
 python -m venv .venv
@@ -124,7 +124,7 @@ The test suite covers:
   title     = {Compact Bonnet Pairs for k-fold Tori:
                998 Seeds and a Validated Asymptotic Law},
   year      = {2026},
-  url       = {https://github.com/aconsciousfractal/bonnet-pairs},
+  url       = {https://github.com/aconsciousfractal/Compact-Bonnet-Pairs-for-k-fold-Tori},
   license   = {MIT}
 }
 ```
