@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Compact Bonnet Pairs for k-fold Tori: 998 Seeds and a Validated Asymptotic Law"
+type: software
+authors:
+  - family-names: Babanskyy
+    given-names: Oleksiy
+    orcid: ""
+repository-code: "https://github.com/aconsciousfractal/bonnet-pairs"
+license: MIT
+date-released: "2026-04-17"
+keywords:
+  - bonnet-pairs
+  - differential-geometry
+  - isothermic-surfaces
+  - computational-mathematics
+  - experimental-mathematics
