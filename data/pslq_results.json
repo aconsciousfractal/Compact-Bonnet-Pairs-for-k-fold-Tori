@@ -1,0 +1,101 @@
+{
+  "tau": {
+    "re": 0.5,
+    "im": 0.3205
+  },
+  "omega": 0.389,
+  "modular_invariants": {
+    "theta2_0": 1.2413936595402424,
+    "theta3_0": 1.035637068100226,
+    "theta4_0": 1.035637068100226,
+    "theta1_prime_0": 6.2665464276212965,
+    "eta_tau_abs": 1.0258354014762048,
+    "j_tau_re": 0.019475748649026466,
+    "modular_lambda_re": 0.7969809777705341
+  },
+  "constants": {
+    "C1_delta2k": {
+      "value": 48.28075753529018,
+      "desc": "delta^2 * k asymptote"
+    },
+    "C2_s2_inf": {
+      "value": 7.318634770001355,
+      "desc": "s2 infinity"
+    },
+    "C3_s1k": {
+      "value": -11.3,
+      "desc": "s1* * k invariant"
+    },
+    "C4_slope": {
+      "value": 0.478,
+      "desc": "ds2/ddelta slope"
+    },
+    "C5_argxk": {
+      "value": -4.0,
+      "desc": "arg(x)*k spectral phase"
+    },
+    "C6_floor": {
+      "value": 0.04688,
+      "desc": "Procrustes floor"
+    }
+  },
+  "pslq_results": {
+    "C1_delta2k": {
+      "value": 48.28075753529018,
+      "basis": null,
+      "description": "delta^2 * k asymptote"
+    },
+    "C2_s2_inf": {
+      "value": 7.318634770001355,
+      "basis": null,
+      "description": "s2 infinity"
+    },
+    "C3_s1k": {
+      "value": -11.3,
+      "basis": null,
+      "description": "s1* * k invariant"
+    },
+    "C4_slope": {
+      "value": 0.478,
+      "basis": "omega",
+      "coefficients": [
+        10,
+        3,
+        -20,
+        0,
+        0
+      ],
+      "reconstructed": 0.478,
+      "error": 0.0,
+      "description": "ds2/ddelta slope"
+    },
+    "C5_argxk": {
+      "value": -4.0,
+      "basis": "simple",
+      "coefficients": [
+        -1,
+        -4,
+        0,
+        0
+      ],
+      "reconstructed": -4.0,
+      "error": 0.0,
+      "description": "arg(x)*k spectral phase"
+    },
+    "C6_floor": {
+      "value": 0.04688,
+      "basis": "pi_omega",
+      "coefficients": [
+        -9,
+        17,
+        -13,
+        2,
+        6,
+        2
+      ],
+      "reconstructed": 0.046880008448777113,
+      "error": 8.448777115421802e-09,
+      "description": "Procrustes floor"
+    }
+  }
+}

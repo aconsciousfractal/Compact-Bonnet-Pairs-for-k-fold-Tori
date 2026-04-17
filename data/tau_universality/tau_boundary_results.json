@@ -1,0 +1,71 @@
+{
+  "timestamp": "2026-04-06 00:27:13",
+  "tau_star": 0.35472983434478356,
+  "tau_star_precision": 2.7755575615628914e-17,
+  "omega_crit_approach": [
+    {
+      "tau_imag": 0.2,
+      "omega_crit": 0.7211028313994494
+    },
+    {
+      "tau_imag": 0.25,
+      "omega_crit": 0.6319429165523163
+    },
+    {
+      "tau_imag": 0.3,
+      "omega_crit": 0.48216002699928817
+    },
+    {
+      "tau_imag": 0.32,
+      "omega_crit": 0.3917291215675812
+    },
+    {
+      "tau_imag": 0.34,
+      "omega_crit": 0.25996315767675215
+    },
+    {
+      "tau_imag": 0.345,
+      "omega_crit": 0.212254581374969
+    },
+    {
+      "tau_imag": 0.35,
+      "omega_crit": 0.1486618903612792
+    },
+    {
+      "tau_imag": 0.352,
+      "omega_crit": 0.11314352060731303
+    },
+    {
+      "tau_imag": 0.354,
+      "omega_crit": 0.05860925361041028
+    }
+  ],
+  "beta_exponent": 0.49258236533448035,
+  "beta_fit_range": "tau > 0.30",
+  "A_tau": [
+    {
+      "tau_imag": 0.3205128205,
+      "A_richardson": 7.0812760137488056
+    },
+    {
+      "tau_imag": 0.25,
+      "A_richardson": 6.784587986864284
+    },
+    {
+      "tau_imag": 0.3,
+      "A_richardson": 6.966748996285671
+    },
+    {
+      "tau_imag": 0.2,
+      "A_richardson": 6.901130150533685
+    },
+    {
+      "tau_imag": 0.35,
+      "A_richardson": 7.269971385546546
+    }
+  ],
+  "A_monotone": false,
+  "A_min_tau": 0.25,
+  "A_min_value": 6.784587986864284,
+  "elapsed_sec": 19.279954195022583
+}

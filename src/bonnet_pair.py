@@ -45,7 +45,7 @@ from .isothermic_torus import (
 
 
 # ---------------------------------------------------------------------------
-# Discrete differential geometry (inlined from PAPP core)
+# Discrete differential geometry
 # ---------------------------------------------------------------------------
 
 def compute_metric_tensor_periodic_central(f_grid, u_grid, v_grid):
