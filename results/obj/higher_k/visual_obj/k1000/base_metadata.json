@@ -1,0 +1,51 @@
+{
+  "k": 1000,
+  "palette": "Mercury",
+  "category": "base_torus",
+  "surface_type": "isothermic_torus_before_bonnet",
+  "tau_imag": 0.3205128205,
+  "s1": -8.5,
+  "delta": 0.223742,
+  "s2": 7.299593,
+  "theta_deg": 0.36,
+  "resolution": 120,
+  "n_vertices": 14400,
+  "n_triangles": 28800,
+  "n_flux_edges": 30400,
+  "time_seconds": 72.4,
+  "omega": 0.38901804758715763,
+  "bbox": {
+    "min": [
+      -0.09782006203794848,
+      -1.2835904251229442,
+      -3.641250995222571
+    ],
+    "max": [
+      0.11984619146061629,
+      2.103087671714828,
+      0.0023331969816434463
+    ]
+  },
+  "color_scheme": {
+    "name": "Mercury",
+    "hue_range": [
+      0.0,
+      1.0
+    ],
+    "mtl_kd": [
+      0.8,
+      0.8,
+      0.85
+    ]
+  },
+  "files": [
+    "k1000_base.obj",
+    "k1000_base.mtl",
+    "k1000_base_flux.obj"
+  ],
+  "companion_bonnet_files": [
+    "k1000_f_plus.obj",
+    "k1000_f_minus.obj",
+    "k1000_material.mtl"
+  ]
+}

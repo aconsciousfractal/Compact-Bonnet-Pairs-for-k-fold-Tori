@@ -15,4 +15,5 @@ build/
 *.blg
 .DS_Store
 Thumbs.db
-results/
+results/*
+!results/obj/

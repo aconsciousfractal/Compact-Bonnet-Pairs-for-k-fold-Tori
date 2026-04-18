@@ -1,0 +1,51 @@
+{
+  "k": 750,
+  "palette": "Graphite",
+  "category": "base_torus",
+  "surface_type": "isothermic_torus_before_bonnet",
+  "tau_imag": 0.3205128205,
+  "s1": -8.5,
+  "delta": 0.258281,
+  "s2": 7.291726,
+  "theta_deg": 0.48,
+  "resolution": 120,
+  "n_vertices": 14400,
+  "n_triangles": 28800,
+  "n_flux_edges": 30400,
+  "time_seconds": 70.9,
+  "omega": 0.38901804758715763,
+  "bbox": {
+    "min": [
+      -0.11182281405678673,
+      -1.2925441304834253,
+      -3.656994097745675
+    ],
+    "max": [
+      0.1411607472048368,
+      2.1114134752425766,
+      0.0026781769510917414
+    ]
+  },
+  "color_scheme": {
+    "name": "Graphite",
+    "hue_range": [
+      0.52,
+      0.6
+    ],
+    "mtl_kd": [
+      0.55,
+      0.58,
+      0.65
+    ]
+  },
+  "files": [
+    "k750_base.obj",
+    "k750_base.mtl",
+    "k750_base_flux.obj"
+  ],
+  "companion_bonnet_files": [
+    "k750_f_plus.obj",
+    "k750_f_minus.obj",
+    "k750_material.mtl"
+  ]
+}

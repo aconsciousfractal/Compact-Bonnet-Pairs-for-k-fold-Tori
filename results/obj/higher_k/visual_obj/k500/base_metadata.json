@@ -1,0 +1,51 @@
+{
+  "k": 500,
+  "palette": "Pewter",
+  "category": "base_torus",
+  "surface_type": "isothermic_torus_before_bonnet",
+  "tau_imag": 0.3205128205,
+  "s1": -8.5,
+  "delta": 0.316148,
+  "s2": 7.276017,
+  "theta_deg": 0.72,
+  "resolution": 120,
+  "n_vertices": 14400,
+  "n_triangles": 28800,
+  "n_flux_edges": 30400,
+  "time_seconds": 72.7,
+  "omega": 0.38901804758715763,
+  "bbox": {
+    "min": [
+      -0.13490931848160045,
+      -1.3074695687593452,
+      -3.683348419340142
+    ],
+    "max": [
+      0.17889033904519133,
+      2.125267383104749,
+      0.0032733125799973895
+    ]
+  },
+  "color_scheme": {
+    "name": "Pewter",
+    "hue_range": [
+      0.48,
+      0.56
+    ],
+    "mtl_kd": [
+      0.65,
+      0.68,
+      0.72
+    ]
+  },
+  "files": [
+    "k500_base.obj",
+    "k500_base.mtl",
+    "k500_base_flux.obj"
+  ],
+  "companion_bonnet_files": [
+    "k500_f_plus.obj",
+    "k500_f_minus.obj",
+    "k500_material.mtl"
+  ]
+}

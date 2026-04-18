@@ -1,0 +1,115 @@
+{
+  "name": "rank221_fold4_paper_4fold_bwd_12__smooth_h3_p011_eps5e-04",
+  "rank": 221,
+  "kind": "bonnet_atlas_theorem9",
+  "seed_label": "paper_4fold_bwd_12",
+  "forcing_label": "smooth_h3_p011",
+  "forcing_family": "smooth_low_freq",
+  "symmetry_fold": 4,
+  "tau_imag": 0.28830578925,
+  "delta": 1.7828157364464166,
+  "s1": -3.13060628,
+  "s2": 1.3740349295843717,
+  "epsilon": 0.0005,
+  "epsilon_bonnet": 0.3,
+  "alpha": [
+    -0.055152369297823176,
+    -0.059323172909501676,
+    -0.152651248041438
+  ],
+  "residual_norm": 0.003180259015316312,
+  "ratio": 0.9983001729737468,
+  "verified_ratio": 0.9982492671535373,
+  "validation_score": 0.005057010712245577,
+  "b_scalar": 0.00014729959320077327,
+  "c_scalar": 0.0017213401997065929,
+  "closure": {
+    "rotation_angle": 1.568046282070474,
+    "k_fold": 4,
+    "k_theta_over_2pi": 0.9982492671535373,
+    "rationality_error": 0.0017507328464626548,
+    "is_rational": true,
+    "axis_direction": [
+      -0.01598443627799134,
+      0.912570097111221,
+      0.408607777281945
+    ],
+    "B_tilde_end": [
+      0.9180933329051701,
+      0.39351397192090687,
+      -0.8428995701748102
+    ],
+    "axial_projection": 1.8559352376879e-05,
+    "axial_projection_abs": 1.8559352376879e-05,
+    "axial_B_norm": 1.3069920808569466,
+    "paper_axial_scalar": null,
+    "paper_axial_scalar_abs": null,
+    "f_plus_closure_max": 4.759591602759475,
+    "f_plus_closure_mean": 2.2621545919594843,
+    "f_minus_closure_max": 4.692460873771185,
+    "f_minus_closure_mean": 2.248369981682034,
+    "euler_plus": {
+      "vertices": 6400,
+      "edges": 12800,
+      "faces": 6400,
+      "euler_characteristic": 0,
+      "expected": 0,
+      "ok": true
+    },
+    "euler_minus": {
+      "vertices": 6400,
+      "edges": 12800,
+      "faces": 6400,
+      "euler_characteristic": 0,
+      "expected": 0,
+      "ok": true
+    },
+    "all_ok": true
+  },
+  "isometry": {
+    "E_max_abs_err": 1.4921397450962104e-13,
+    "F_max_abs_err": 649.0086402225407,
+    "G_max_abs_err": 749.9955276627261,
+    "E_max_rel_err": 1.700968088144604e-14,
+    "F_max_scaled_err": 1.8418261626066361,
+    "G_max_rel_err": 4.3373342226095195,
+    "metric_max_err": 749.9955276627261,
+    "interior_E_max_abs_err": 1.4210854715202004e-13,
+    "interior_F_max_abs_err": 9.88495544414047,
+    "interior_G_max_abs_err": 11.071181997268454,
+    "interior_E_max_rel_err": 1.700968088144604e-14,
+    "interior_F_max_scaled_err": 1.8418261626066361,
+    "interior_G_max_rel_err": 4.3373342226095195,
+    "interior_metric_max_err": 11.071181997268454,
+    "interior_metric_mean_err": 1.3845054176171678,
+    "trim_margin": 8
+  },
+  "mean_curvature": {
+    "H_plus_mean": 0.8737572719855092,
+    "H_minus_mean": 0.8932009138097904,
+    "max_abs_diff": 162.61178287148502,
+    "mean_abs_diff": 0.5967656339911346,
+    "interior_max_diff": 18.589464870364385,
+    "interior_mean_diff": 0.5860607767552114,
+    "trim_margin": 8
+  },
+  "non_congruence": {
+    "procrustes_disparity": 0.518178790814589,
+    "direct_mean_distance": 1.8043630195253149,
+    "direct_max_distance": 6.602336472615177,
+    "scale_ratio": 0.9993813129465635,
+    "is_non_congruent": true
+  },
+  "n_vertices": 6400,
+  "n_triangles": 12800,
+  "n_flux_edges": 13529,
+  "resolution": 80,
+  "output_files": [
+    "rank221_fold4_paper_4fold_bwd_12__smooth_h3_p011_eps5e-04_f_plus.obj",
+    "rank221_fold4_paper_4fold_bwd_12__smooth_h3_p011_eps5e-04_f_minus.obj",
+    "rank221_fold4_paper_4fold_bwd_12__smooth_h3_p011_eps5e-04_flux.obj",
+    "rank221_fold4_paper_4fold_bwd_12__smooth_h3_p011_eps5e-04_material.mtl",
+    "rank221_fold4_paper_4fold_bwd_12__smooth_h3_p011_eps5e-04_metadata.json"
+  ],
+  "time_seconds": 643.24
+}

@@ -1,0 +1,146 @@
+{
+  "paper_3fold": {
+    "k=2": {
+      "symmetry_fold": 2,
+      "theta": 2.094395102406303,
+      "target_theta_for_1fold": 3.141592653589793,
+      "ratio": 0.666666666670839,
+      "nearest_int": 1,
+      "rationality_residual": 0.33333333332916104,
+      "axial_integral": 4.064071301712602e-10,
+      "axial_residual": 4.064071301712602e-10
+    },
+    "k=3": {
+      "symmetry_fold": 3,
+      "theta": 2.094395102406303,
+      "target_theta_for_1fold": 2.0943951023931953,
+      "ratio": 1.0000000000062585,
+      "nearest_int": 1,
+      "rationality_residual": 6.2585492344169324e-12,
+      "axial_integral": 4.064071301712602e-10,
+      "axial_residual": 4.064071301712602e-10
+    },
+    "k=4": {
+      "symmetry_fold": 4,
+      "theta": 2.094395102406303,
+      "target_theta_for_1fold": 1.5707963267948966,
+      "ratio": 1.333333333341678,
+      "nearest_int": 1,
+      "rationality_residual": 0.3333333333416779,
+      "axial_integral": 4.064071301712602e-10,
+      "axial_residual": 4.064071301712602e-10
+    },
+    "k=5": {
+      "symmetry_fold": 5,
+      "theta": 2.094395102406303,
+      "target_theta_for_1fold": 1.2566370614359172,
+      "ratio": 1.6666666666770973,
+      "nearest_int": 2,
+      "rationality_residual": 0.3333333333229027,
+      "axial_integral": 4.064071301712602e-10,
+      "axial_residual": 4.064071301712602e-10
+    },
+    "k=6": {
+      "symmetry_fold": 6,
+      "theta": 2.094395102406303,
+      "target_theta_for_1fold": 1.0471975511965976,
+      "ratio": 2.000000000012517,
+      "nearest_int": 2,
+      "rationality_residual": 1.2517098468833865e-11,
+      "axial_integral": 4.064071301712602e-10,
+      "axial_residual": 4.064071301712602e-10
+    },
+    "k=7": {
+      "symmetry_fold": 7,
+      "theta": 2.094395102406303,
+      "target_theta_for_1fold": 0.8975979010256552,
+      "ratio": 2.3333333333479365,
+      "nearest_int": 2,
+      "rationality_residual": 0.33333333334793647,
+      "axial_integral": 4.064071301712602e-10,
+      "axial_residual": 4.064071301712602e-10
+    },
+    "k=8": {
+      "symmetry_fold": 8,
+      "theta": 2.094395102406303,
+      "target_theta_for_1fold": 0.7853981633974483,
+      "ratio": 2.666666666683356,
+      "nearest_int": 3,
+      "rationality_residual": 0.33333333331664416,
+      "axial_integral": 4.064071301712602e-10,
+      "axial_residual": 4.064071301712602e-10
+    }
+  },
+  "paper_4fold": {
+    "k=2": {
+      "symmetry_fold": 2,
+      "theta": 1.5707963279021184,
+      "target_theta_for_1fold": 3.141592653589793,
+      "ratio": 0.5000000003524396,
+      "nearest_int": 1,
+      "rationality_residual": 0.49999999964756037,
+      "axial_integral": -2.008979338094022e-10,
+      "axial_residual": 2.008979338094022e-10
+    },
+    "k=3": {
+      "symmetry_fold": 3,
+      "theta": 1.5707963279021184,
+      "target_theta_for_1fold": 2.0943951023931953,
+      "ratio": 0.7500000005286594,
+      "nearest_int": 1,
+      "rationality_residual": 0.24999999947134055,
+      "axial_integral": -2.008979338094022e-10,
+      "axial_residual": 2.008979338094022e-10
+    },
+    "k=4": {
+      "symmetry_fold": 4,
+      "theta": 1.5707963279021184,
+      "target_theta_for_1fold": 1.5707963267948966,
+      "ratio": 1.0000000007048793,
+      "nearest_int": 1,
+      "rationality_residual": 7.048792660668823e-10,
+      "axial_integral": -2.008979338094022e-10,
+      "axial_residual": 2.008979338094022e-10
+    },
+    "k=5": {
+      "symmetry_fold": 5,
+      "theta": 1.5707963279021184,
+      "target_theta_for_1fold": 1.2566370614359172,
+      "ratio": 1.2500000008810992,
+      "nearest_int": 1,
+      "rationality_residual": 0.2500000008810992,
+      "axial_integral": -2.008979338094022e-10,
+      "axial_residual": 2.008979338094022e-10
+    },
+    "k=6": {
+      "symmetry_fold": 6,
+      "theta": 1.5707963279021184,
+      "target_theta_for_1fold": 1.0471975511965976,
+      "ratio": 1.500000001057319,
+      "nearest_int": 2,
+      "rationality_residual": 0.4999999989426811,
+      "axial_integral": -2.008979338094022e-10,
+      "axial_residual": 2.008979338094022e-10
+    },
+    "k=7": {
+      "symmetry_fold": 7,
+      "theta": 1.5707963279021184,
+      "target_theta_for_1fold": 0.8975979010256552,
+      "ratio": 1.7500000012335386,
+      "nearest_int": 2,
+      "rationality_residual": 0.2499999987664614,
+      "axial_integral": -2.008979338094022e-10,
+      "axial_residual": 2.008979338094022e-10
+    },
+    "k=8": {
+      "symmetry_fold": 8,
+      "theta": 1.5707963279021184,
+      "target_theta_for_1fold": 0.7853981633974483,
+      "ratio": 2.0000000014097585,
+      "nearest_int": 2,
+      "rationality_residual": 1.4097585321337647e-09,
+      "axial_integral": -2.008979338094022e-10,
+      "axial_residual": 2.008979338094022e-10
+    }
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "total_entries": 240,
+  "fold_3_entries": 125,
+  "fold_4_entries": 115,
+  "tau_imag_values": 25,
+  "tau_range": [
+    0.27051282050000003,
+    0.32871985175
+  ],
+  "all_non_congruent": true,
+  "branches": {
+    "fold_3": {
+      "s1": -3.601381552,
+      "tau_min": 0.3433831832906663,
+      "delta_min": 1.8520141407391506,
+      "delta_range": [
+        1.880197498623781,
+        2.346598203968648
+      ],
+      "s2_range": [
+        0.3623649091913821,
+        1.3958837361792573
+      ],
+      "procrustes_range": [
+        0.3094890366618604,
+        0.523322344618953
+      ],
+      "parabolic_fit": {
+        "slope": 1.8023323161470126,
+        "intercept": 2.5138889488979057,
+        "R2": 0.8963235050911779
+      }
+    },
+    "fold_4": {
+      "s1": -3.130606,
+      "tau_min": 0.34264084323339905,
+      "delta_min": 1.581969065948413,
+      "delta_range": [
+        1.6123365623185957,
+        1.924366925465176
+      ],
+      "s2_range": [
+        0.41408428827771643,
+        1.7077560744306375
+      ],
+      "procrustes_range": [
+        0.33246057973784743,
+        0.5408239162744439
+      ],
+      "parabolic_fit": {
+        "slope": 0.8404828197363055,
+        "intercept": 2.07482809629405,
+        "R2": 0.9239219055635375
+      }
+    }
+  },
+  "tau0_speciality": {
+    "tau0": 0.3205128205,
+    "fold4_tau_min": 0.34264084323339905,
+    "distance_fraction": 0.06903943093096655,
+    "fold4_delta_at_tau0": 1.61245155
+  },
+  "quality": {
+    "median_residual": 1.4066335576376175e-06,
+    "best_residual": 1.0768551627620392e-11,
+    "worst_residual": 0.29324481986094086,
+    "entries_below_1e-9": 48
+  },
+  "forcing_breakdown": {
+    "anti_reflection": 45,
+    "smooth_low_freq": 100,
+    "symmetry_aware": 30,
+    "high_harmonic": 20,
+    "phase_shifted": 45
+  },
+  "epsilon_breakdown": {
+    "0.00025": 48,
+    "0.0005": 48,
+    "0.00075": 48,
+    "0.001": 48,
+    "0.0001": 48
+  },
+  "compute_hours": 30.871958333333335
+}

@@ -1,0 +1,105 @@
+{
+  "name": "bonnet_theorem9_perturbed_4fold_visual",
+  "kind": "theorem9_perturbative_bonnet_visual_companion",
+  "tau_imag": 0.3205128205,
+  "delta": 1.61245155,
+  "s1": -3.13060628,
+  "s2": 0.5655771591,
+  "symmetry_fold": 4,
+  "epsilon_perturbation": 0.0005,
+  "epsilon_bonnet": 0.3,
+  "alpha": [
+    0.009192282477850252,
+    -0.05631084078314392,
+    0.13657403415912184
+  ],
+  "residual_norm": 3.1152302293529824e-11,
+  "ratio": 1.000004315558235,
+  "closure": {
+    "rotation_angle": 1.5708031056579201,
+    "k_fold": 4,
+    "k_theta_over_2pi": 1.000004315558235,
+    "rationality_error": 4.315558234990746e-06,
+    "is_rational": true,
+    "axis_direction": [
+      0.0019374161179833815,
+      0.9982519728839594,
+      -0.0590698319962767
+    ],
+    "B_tilde_end": [
+      1.836800820019329,
+      -0.11134466342955553,
+      -1.8260098207349296
+    ],
+    "axial_projection": 0.0002707109099399224,
+    "axial_projection_abs": 0.0002707109099399224,
+    "axial_B_norm": 2.5924017342839307,
+    "paper_axial_scalar": null,
+    "paper_axial_scalar_abs": null,
+    "f_plus_closure_max": 9.389968387343997,
+    "f_plus_closure_mean": 4.215798572180783,
+    "f_minus_closure_max": 9.405759131407915,
+    "f_minus_closure_mean": 4.215532191877796,
+    "euler_plus": {
+      "vertices": 25600,
+      "edges": 51200,
+      "faces": 25600,
+      "euler_characteristic": 0,
+      "expected": 0,
+      "ok": true
+    },
+    "euler_minus": {
+      "vertices": 25600,
+      "edges": 51200,
+      "faces": 25600,
+      "euler_characteristic": 0,
+      "expected": 0,
+      "ok": true
+    },
+    "all_ok": true
+  },
+  "isometry": {
+    "E_max_abs_err": 2.0463630789890885e-12,
+    "F_max_abs_err": 10641.582191368008,
+    "G_max_abs_err": 10156.524929952233,
+    "E_max_rel_err": 1.197687499437206e-13,
+    "F_max_scaled_err": 1.5084200542180812,
+    "G_max_rel_err": 0.7658519823226221,
+    "metric_max_err": 10641.582191368008,
+    "interior_E_max_abs_err": 5.258016244624741e-13,
+    "interior_F_max_abs_err": 3.558494572870963,
+    "interior_G_max_abs_err": 2.1607968350376545,
+    "interior_E_max_rel_err": 4.714460524500753e-14,
+    "interior_F_max_scaled_err": 0.9369777992399907,
+    "interior_G_max_rel_err": 0.7658519823226221,
+    "interior_metric_max_err": 3.558494572870963,
+    "interior_metric_mean_err": 1.195682213255156,
+    "trim_margin": 16
+  },
+  "mean_curvature": {
+    "H_plus_mean": 0.6140004110460938,
+    "H_minus_mean": 0.6103868045368506,
+    "max_abs_diff": 629.9212431357909,
+    "mean_abs_diff": 0.29177938295146705,
+    "interior_max_diff": 1.2683121198563234,
+    "interior_mean_diff": 0.11409858790137076,
+    "trim_margin": 16
+  },
+  "non_congruence": {
+    "procrustes_disparity": 0.38757145556720685,
+    "direct_mean_distance": 2.48145988447037,
+    "direct_max_distance": 13.734183584948374,
+    "scale_ratio": 1.0002144079285424,
+    "is_non_congruent": true
+  },
+  "n_vertices": 25600,
+  "n_triangles": 51200,
+  "n_flux_edges": 54116,
+  "output_files": [
+    "bonnet_theorem9_perturbed_4fold_visual_f_plus.obj",
+    "bonnet_theorem9_perturbed_4fold_visual_f_minus.obj",
+    "bonnet_theorem9_perturbed_4fold_visual_flux.obj",
+    "bonnet_theorem9_perturbed_4fold_visual_material.mtl"
+  ],
+  "time_seconds": 447.58
+}

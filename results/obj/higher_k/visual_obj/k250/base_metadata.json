@@ -1,0 +1,51 @@
+{
+  "k": 250,
+  "palette": "Chrome",
+  "category": "base_torus",
+  "surface_type": "isothermic_torus_before_bonnet",
+  "tau_imag": 0.3205128205,
+  "s1": -8.5,
+  "delta": 0.446337,
+  "s2": 7.229097,
+  "theta_deg": 1.44,
+  "resolution": 120,
+  "n_vertices": 14400,
+  "n_triangles": 28800,
+  "n_flux_edges": 30400,
+  "time_seconds": 70.1,
+  "omega": 0.38901804758715763,
+  "bbox": {
+    "min": [
+      -0.18428003669718745,
+      -1.3406914592229748,
+      -3.7424858012568984
+    ],
+    "max": [
+      0.2720438120916868,
+      2.156003943686412,
+      0.004696301067950217
+    ]
+  },
+  "color_scheme": {
+    "name": "Chrome",
+    "hue_range": [
+      0.5,
+      0.58
+    ],
+    "mtl_kd": [
+      0.75,
+      0.78,
+      0.82
+    ]
+  },
+  "files": [
+    "k250_base.obj",
+    "k250_base.mtl",
+    "k250_base_flux.obj"
+  ],
+  "companion_bonnet_files": [
+    "k250_f_plus.obj",
+    "k250_f_minus.obj",
+    "k250_material.mtl"
+  ]
+}

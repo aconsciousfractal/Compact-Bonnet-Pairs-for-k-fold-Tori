@@ -1,0 +1,223 @@
+{
+  "name": "phase11_6_theorem9_higher_fold",
+  "description": "Theorem 9 perturbation on k=5,6,7 seeds",
+  "seed_results": {
+    "5": {
+      "label": "new_5fold",
+      "linearization": {
+        "determinant": -0.01149554502409844,
+        "condition_number": 8.95307391222231,
+        "invertible": true
+      },
+      "primary_forcing": {
+        "forcing": "smooth_h4_p019",
+        "success": true,
+        "n_success": 4,
+        "message": "epsilon continuation completed successfully",
+        "steps": [
+          {
+            "epsilon": 5e-05,
+            "success": true,
+            "residual_norm": 3.533630206639766e-12,
+            "alpha": [
+              -0.03553331611597578,
+              -0.05953976249561021,
+              -0.05186570344289613
+            ],
+            "ratio": 1.0000000000015203,
+            "b_scalar": -2.8442005695072936e-12,
+            "c_scalar": 1.5149947268922048e-13
+          },
+          {
+            "epsilon": 0.0001,
+            "success": true,
+            "residual_norm": 1.1526619009577449e-11,
+            "alpha": [
+              -0.03555581722433675,
+              -0.059544816748201966,
+              -0.05191547710516273
+            ],
+            "ratio": 0.9999999999997145,
+            "b_scalar": -1.1525143686630379e-11,
+            "c_scalar": 4.792065182168681e-14
+          },
+          {
+            "epsilon": 0.00025,
+            "success": true,
+            "residual_norm": 1.3830686259306292e-11,
+            "alpha": [
+              -0.03562353987783907,
+              -0.05956008661438644,
+              -0.05206549146571955
+            ],
+            "ratio": 0.9999999999998513,
+            "b_scalar": 1.3830684861271259e-11,
+            "c_scalar": 1.3183898417423734e-16
+          },
+          {
+            "epsilon": 0.0005,
+            "success": true,
+            "residual_norm": 4.4420417323276914e-12,
+            "alpha": [
+              -0.03573714283284296,
+              -0.05958588881711905,
+              -0.052317834751169086
+            ],
+            "ratio": 0.9999999999998819,
+            "b_scalar": 4.441924258968832e-12,
+            "c_scalar": -2.6489227478165844e-15
+          }
+        ]
+      },
+      "library_sweep": null,
+      "pipeline_verification": {
+        "error": "'Theorem9BonnetVerification' object has no attribute 'isometry_error'"
+      }
+    },
+    "6": {
+      "label": "new_6fold",
+      "linearization": {
+        "determinant": -0.003483252840649808,
+        "condition_number": 11.177271213762827,
+        "invertible": true
+      },
+      "primary_forcing": {
+        "forcing": "smooth_h4_p019",
+        "success": true,
+        "n_success": 4,
+        "message": "epsilon continuation completed successfully",
+        "steps": [
+          {
+            "epsilon": 5e-05,
+            "success": true,
+            "residual_norm": 4.5407150775181265e-12,
+            "alpha": [
+              -0.008370251427164514,
+              -0.020066996472420353,
+              0.0058306177928640615
+            ],
+            "ratio": 1.0000000000001261,
+            "b_scalar": -4.5407150262022355e-12,
+            "c_scalar": 5.184654788825682e-16
+          },
+          {
+            "epsilon": 0.0001,
+            "success": true,
+            "residual_norm": 8.865649547411344e-11,
+            "alpha": [
+              -0.008383880148753367,
+              -0.020068362156327426,
+              0.00580672622543739
+            ],
+            "ratio": 1.000000000000121,
+            "b_scalar": 8.865649533951192e-11,
+            "c_scalar": -5.963111948670274e-17
+          },
+          {
+            "epsilon": 0.00025,
+            "success": true,
+            "residual_norm": 1.0413224873381984e-11,
+            "alpha": [
+              -0.008424873388797575,
+              -0.020072489654762573,
+              0.005734771620288074
+            ],
+            "ratio": 1.0000000000001295,
+            "b_scalar": -1.0413224102445717e-11,
+            "c_scalar": 2.8536201179818477e-16
+          },
+          {
+            "epsilon": 0.0005,
+            "success": true,
+            "residual_norm": 2.1495137947917682e-11,
+            "alpha": [
+              -0.008493569501298735,
+              -0.020079482169749963,
+              0.005613875604909386
+            ],
+            "ratio": 1.000000000000122,
+            "b_scalar": -2.1495137267346642e-11,
+            "c_scalar": 3.644654023027272e-15
+          }
+        ]
+      },
+      "library_sweep": null,
+      "pipeline_verification": {
+        "error": "'Theorem9BonnetVerification' object has no attribute 'isometry_error'"
+      }
+    },
+    "7": {
+      "label": "new_7fold_a",
+      "linearization": {
+        "determinant": -0.0011424963180588577,
+        "condition_number": 21.70622193991925,
+        "invertible": true
+      },
+      "primary_forcing": {
+        "forcing": "smooth_h4_p019",
+        "success": true,
+        "n_success": 4,
+        "message": "epsilon continuation completed successfully",
+        "steps": [
+          {
+            "epsilon": 5e-05,
+            "success": true,
+            "residual_norm": 2.6685702987617605e-11,
+            "alpha": [
+              0.06561624365865601,
+              0.011470296142380489,
+              0.1851594159471288
+            ],
+            "ratio": 0.9999999999996584,
+            "b_scalar": -2.6685686646543694e-11,
+            "c_scalar": 1.0386656812411132e-16
+          },
+          {
+            "epsilon": 0.0001,
+            "success": true,
+            "residual_norm": 2.862246174352861e-10,
+            "alpha": [
+              0.06562428727093168,
+              0.011471116509158323,
+              0.1851660170372525
+            ],
+            "ratio": 0.9999999999996568,
+            "b_scalar": -2.862246160570403e-10,
+            "c_scalar": -6.245004513516506e-17
+          },
+          {
+            "epsilon": 0.00025,
+            "success": true,
+            "residual_norm": 1.3082963542800176e-10,
+            "alpha": [
+              0.06564853905543822,
+              0.011473691351347877,
+              0.1851859296716608
+            ],
+            "ratio": 0.9999999999991567,
+            "b_scalar": 1.308289587775846e-10,
+            "c_scalar": 4.414871246360974e-16
+          },
+          {
+            "epsilon": 0.0005,
+            "success": true,
+            "residual_norm": 1.576120293966322e-10,
+            "alpha": [
+              0.06568879369925626,
+              0.011477918303478801,
+              0.18521871967676862
+            ],
+            "ratio": 0.9999999999996305,
+            "b_scalar": 1.5761202933062268e-10,
+            "c_scalar": 2.964208739575369e-16
+          }
+        ]
+      },
+      "library_sweep": null,
+      "pipeline_verification": {
+        "error": "'Theorem9BonnetVerification' object has no attribute 'isometry_error'"
+      }
+    }
+  },
+  "time_seconds": 2798.14
+}

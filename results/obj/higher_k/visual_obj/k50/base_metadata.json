@@ -1,0 +1,51 @@
+{
+  "k": 50,
+  "palette": "Titanium",
+  "category": "base_torus",
+  "surface_type": "isothermic_torus_before_bonnet",
+  "tau_imag": 0.3205128205,
+  "s1": -8.5,
+  "delta": 0.984585,
+  "s2": 6.864665,
+  "theta_deg": 7.2,
+  "resolution": 120,
+  "n_vertices": 14400,
+  "n_triangles": 28800,
+  "n_flux_edges": 30400,
+  "time_seconds": 73.6,
+  "omega": 0.38901804758715763,
+  "bbox": {
+    "min": [
+      -0.35122030096940904,
+      -1.4728844570703183,
+      -3.9814938836443536
+    ],
+    "max": [
+      0.7822087237985307,
+      2.2890329681987414,
+      0.012154251966723095
+    ]
+  },
+  "color_scheme": {
+    "name": "Titanium",
+    "hue_range": [
+      0.55,
+      0.62
+    ],
+    "mtl_kd": [
+      0.62,
+      0.68,
+      0.78
+    ]
+  },
+  "files": [
+    "k50_base.obj",
+    "k50_base.mtl",
+    "k50_base_flux.obj"
+  ],
+  "companion_bonnet_files": [
+    "k50_f_plus.obj",
+    "k50_f_minus.obj",
+    "k50_material.mtl"
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "name": "bonnet_theorem9_perturbed_4fold",
+  "kind": "theorem9_perturbative_bonnet",
+  "tau_imag": 0.3205128205,
+  "delta": 1.61245155,
+  "s1": -3.13060628,
+  "s2": 0.5655771591,
+  "symmetry_fold": 4,
+  "epsilon_perturbation": 0.0005,
+  "epsilon_bonnet": 0.3,
+  "alpha": [
+    0.009192282477850252,
+    -0.05631084078314392,
+    0.13657403415912184
+  ],
+  "residual_norm": 3.1152302293529824e-11,
+  "theta": 1.5707963279007588,
+  "ratio": 1.0000000007040137,
+  "b_scalar": 3.112262010607214e-11,
+  "c_scalar": -7.402932433731024e-16,
+  "isometry": {
+    "E_max_abs_err": 2.0463630789890885e-12,
+    "F_max_abs_err": 10162.475298631,
+    "G_max_abs_err": 512.5924501719346,
+    "E_max_rel_err": 7.218310759647333e-14,
+    "G_max_rel_err": 0.7653289526639065,
+    "metric_max_err": 10162.475298631
+  },
+  "mean_curvature": {
+    "H_plus_mean": 0.6303296983594974,
+    "H_minus_mean": 0.6299412431246069,
+    "max_abs_diff": 276.48334811855443,
+    "mean_abs_diff": 0.35718268877607445,
+    "interior_max_diff": 1.2137425617025748,
+    "interior_mean_diff": 0.11464278393670645
+  },
+  "non_congruence": {
+    "procrustes_disparity": 0.38817575305880797,
+    "direct_mean_distance": 2.482418096436726,
+    "direct_max_distance": 13.734183584948374,
+    "scale_ratio": 1.0002122007482375,
+    "is_non_congruent": true
+  },
+  "n_vertices": 6400,
+  "n_triangles": 12800,
+  "n_flux_edges": 13529,
+  "output_files": [
+    "bonnet_theorem9_perturbed_4fold_f_plus.obj",
+    "bonnet_theorem9_perturbed_4fold_f_minus.obj",
+    "bonnet_theorem9_perturbed_4fold_flux.obj",
+    "bonnet_theorem9_perturbed_4fold_material.mtl"
+  ],
+  "time_seconds": 368.66
+}

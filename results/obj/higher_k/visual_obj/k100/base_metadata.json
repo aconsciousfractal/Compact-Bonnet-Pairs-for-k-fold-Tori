@@ -1,0 +1,51 @@
+{
+  "k": 100,
+  "palette": "Platinum",
+  "category": "base_torus",
+  "surface_type": "isothermic_torus_before_bonnet",
+  "tau_imag": 0.3205128205,
+  "s1": -8.5,
+  "delta": 0.702122,
+  "s2": 7.09018,
+  "theta_deg": 3.6,
+  "resolution": 120,
+  "n_vertices": 14400,
+  "n_triangles": 28800,
+  "n_flux_edges": 30400,
+  "time_seconds": 70.2,
+  "omega": 0.38901804758715763,
+  "bbox": {
+    "min": [
+      -0.2721379521595567,
+      -1.4045602369238424,
+      -3.8576437620531863
+    ],
+    "max": [
+      0.4904011574807171,
+      2.217881673727876,
+      0.007882622684040323
+    ]
+  },
+  "color_scheme": {
+    "name": "Platinum",
+    "hue_range": [
+      0.53,
+      0.6
+    ],
+    "mtl_kd": [
+      0.7,
+      0.72,
+      0.8
+    ]
+  },
+  "files": [
+    "k100_base.obj",
+    "k100_base.mtl",
+    "k100_base_flux.obj"
+  ],
+  "companion_bonnet_files": [
+    "k100_f_plus.obj",
+    "k100_f_minus.obj",
+    "k100_material.mtl"
+  ]
+}

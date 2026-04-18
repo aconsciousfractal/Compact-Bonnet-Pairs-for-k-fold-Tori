@@ -1,0 +1,2 @@
+results/obj/**/*.obj filter=lfs diff=lfs merge=lfs -text
+results/obj/**/*.mtl filter=lfs diff=lfs merge=lfs -text
