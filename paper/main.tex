@@ -2546,7 +2546,7 @@ The key files are:
 \item \texttt{theorem7\_periodicity.py}: Newton solver and
   continuation,
 \item \texttt{retraction\_form.py}: Burstall et al.\ construction,
-\item \texttt{results/phase15\_asymptotic/full\_series\_k3\_1000.json}: all $998$ seeds.
+\item \texttt{data/full\_series\_k3\_1000.json}: all $998$ seeds.
 \end{itemize}
 Running \texttt{python run\_full\_series.py} reproduces the entire
 dataset from scratch.
@@ -2557,8 +2557,8 @@ Python~3.11, \texttt{mpmath}~1.3, \texttt{numpy}~1.26,
 \texttt{scipy}~1.12.
 The \texttt{mpmath} computations use $40$-digit decimal precision
 with $120$-node Gauss--Legendre quadrature.
-The exact commit hash and a \texttt{requirements.txt} will be
-included with the repository upon publication.
+The frozen commit for this paper is \texttt{2247535};
+a \texttt{requirements.txt} is included in the repository.
 
 
 %% ═════════════════════════════════════════════════════════════════════

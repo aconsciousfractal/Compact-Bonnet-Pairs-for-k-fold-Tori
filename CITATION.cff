@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
-title: "Compact Bonnet Pairs for k-fold Tori: 998 Seeds and a Validated Asymptotic Law"
+title: "Compact Bonnet Pairs for k-fold Tori: 998 Computed Seeds and a Validated k^{-1/2} Asymptotic Law"
 type: software
 authors:
   - family-names: Babanskyy
