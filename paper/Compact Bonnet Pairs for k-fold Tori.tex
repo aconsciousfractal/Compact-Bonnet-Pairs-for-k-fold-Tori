@@ -99,23 +99,25 @@
 
 %% ── Abstract ────────────────────────────────────────────────────────
 \begin{abstract}
-Bobenko, Hoffmann, and Sageman-Furnas~\cite{BHS25,BHS-comp} constructed
+Bobenko, Hoffmann, and Sageman-Furnas~\cite{BHS25} constructed
 compact Bonnet pairs from isothermic tori whose closing conditions
 reduce to a system on a genus-one spectral curve.
 Working on a single reference branch (gauge $s_1=-8.5$), we solve
 these conditions for all fold numbers $k=3,\ldots,1000$, producing
-$998$ archived seeds verified by four universal numerical gates; an
-additional retraction-form audit is carried out on representative
-seeds.  The principal finding is the mixed local-analytic/numerical
+$998$ archived seeds satisfying the residual closing equations under the
+reported mixed archive/recheck audit; additional spectral and geometric
+checks are carried out on representative or separately archived subsets.
+The principal finding is the mixed local-analytic/numerical
 asymptotic law
 \[
   \delta_k = \frac{A}{\sqrt{k}}\,\Bigl(1 - \frac{c_1}{k}
   + \Oo(k^{-2})\Bigr),
-  \qquad A = 7.081\,416\,491\,399\,252\,576 \pm 3 \times 10^{-18},
+  \qquad A \approx 7.081\,416\,491\,399\,252\,576,
 \]
-where the local high-fold mechanism is derived analytically and the
-computed branch is validated numerically on a $120$-seed checkpoint
-set for $k\ge100$.  At $\omega_{\mathrm{crit}}$, the spectral
+where the local high-fold mechanism is derived analytically, the
+displayed digits of~$A$ come from high-precision Richardson
+extrapolation, and the computed branch is validated numerically on a
+$120$-seed checkpoint set for $k\ge100$.  At $\omega_{\mathrm{crit}}$, the spectral
 cross-ratio satisfies $\lvert\arg(\mathrm{CR})\rvert\cdot k\to4$
 (\cref{rem:CR-sign}), and the corrected branch relation is
 \[
@@ -127,7 +129,7 @@ The modular parameter of the spectral curve is conjectured to satisfy
   \;=\; -\tfrac{1}{2} + \ii\,\frac{\ln(4k)}{\pi}
   + \Oo(k^{-2}),
 \]
-with the leading term supported numerically on $13$ archived
+with the leading term supported numerically on $50$ archived
 spectral-period seeds spanning $k=5$ to $200$
 (\cref{conj:tau-spec}), and with the finite seed-level branch relation
 verified on the corresponding archived full-precision seed subset.
@@ -185,7 +187,7 @@ with $s_1$ fixed (a gauge choice), such that:
   (ensuring that the surface closes without translational drift
   along the rotation axis).
 \end{enumerate}
-These conditions are Equations~(82)--(83) of~\cite{BHS-comp}; we
+These conditions are Equations~(82)--(83) of~\cite{BHS25}; we
 recall their precise form in~\cref{sec:periodicity}.
 
 \subsection{Contributions}
@@ -385,12 +387,11 @@ $\mu^2 = Q(s)$ is elliptic (genus~$1$).
 %% ═════════════════════════════════════════════════════════════════════
 
 For the isothermic cylinder to close into a $k$-fold torus, two
-conditions must be satisfied simultaneously.  We follow the notation
-of~\cite[Section~5.3]{BHS-comp}.
-(Lemma~8 of~\cite{BHS-comp} establishes that the closing conditions
-reduce to two real equations on $(\delta, s_2)$;
-Lemma~9 verifies local uniqueness via the non-vanishing
-Jacobian of the period map.)
+conditions must be satisfied simultaneously.  We follow the notation of
+Theorem~7 in~\cite{BHS25}.  Lemma~8 of~\cite{BHS25} reduces the
+closing conditions to two real equations on $(\delta, s_2)$, and
+Lemma~9 verifies local uniqueness via the non-vanishing Jacobian of the
+period map.
 
 To avoid collision with our fixed gauge parameter $s_1$ and the second
 branch parameter $s_2$, we write $s^- < s^+$ for the two real zeros of
@@ -403,7 +404,7 @@ paper.
 \subsection{Theta-half periodicity}\label{sec:theta-half}
 
 \begin{proposition}[Theta-half condition,
-  {\cite[Eq.~82]{BHS-comp}}]
+  {\cite[Eq.~82]{BHS25}}]
 \label{prop:theta-half}
 Let $s = \ee^{-h(\omega,w)}$.  The BHS rationality integral is
 \begin{equation}
@@ -434,7 +435,7 @@ equivalently
 \subsection{Axial period integral}\label{sec:axial}
 
 \begin{proposition}[Axial condition,
-  {\cite[Eq.~83]{BHS-comp}}]
+  {\cite[Eq.~83]{BHS25}}]
 \label{prop:axial}
 The translational drift along the rotation axis vanishes if and only if
 \begin{equation}
@@ -446,14 +447,14 @@ The translational drift along the rotation axis vanishes if and only if
   \label{eq:F-ax}
 \end{equation}
 where $Q_2(s)$ is the axial numerator
-(\cite[Eq.~86]{BHS-comp}):
+(\cite[Eq.~86]{BHS25}):
 \begin{equation}
   Q_2(s) \;=\; -(s - s_1)(s - s_2)
     \;+\; \delta^2\,U_1'(\omega)\,s.
   \label{eq:Q2}
 \end{equation}
 The denominator profile in~\eqref{eq:theta-half-bhs} is
-\cite[Eq.~87]{BHS-comp}
+\cite[Eq.~87]{BHS25}
 \begin{equation}
   \widetilde Q_2(s)
   \;=
@@ -582,8 +583,11 @@ $2 \times 2$ Newton iteration with the following features:
 \end{remark}
 
 \subsection{Validation protocol}\label{sec:validation}
-Each seed $(\delta_k, s_{2,k})$ is validated by four universal gates;
-an additional fifth gate is used as a representative-seed retraction audit:
+The validation framework consists of four idealized gates for a fully
+uniform archive; in the checked-in $998$-seed branch file, Gate~G1 is
+recorded per row, while Gates~G2--G4 are applied on representative seeds
+and archived sweeps.  An additional fifth gate is used as a
+representative-seed retraction audit:
 \begin{enumerate}[nosep,label=\textbf{G\arabic*.}]
 \item \textbf{Residual:}
   $\max(\abs{F_{\mathrm{rat}}}, \abs{F_{\mathrm{ax}}}) < 2\times 10^{-10}$.
@@ -657,8 +661,7 @@ $k$ & $\delta_k$ & $s_{2,k}$ & Residual & $\theta\,(^\circ)$ \\
 \subsection{The full series \texorpdfstring{$k = 3,\ldots,1000$}{k = 3,...,1000}}
 \label{sec:full-series}
 All $998$ seeds converge; for each~$k$ we obtain a
-solution (uniqueness in the continuation domain is
-confirmed a~posteriori in \cref{sec:moduli-topology}).
+solution on the tracked branch.
 No bifurcations, branch jumps, or
 failures are detected in the archived $k = 3,\ldots,1000$
 continuation.
@@ -990,7 +993,7 @@ extrapolation (see \cref{sec:pslq}).
 \label{sec:theorem9-consistency}
 
 The implicit function theorem underlying
-{\cite[Theorem~9]{BHS-comp}} guarantees that near any closed
+{\cite[Theorem~9]{BHS25}} guarantees that near any closed
 Theorem~7 seed, the periodicity conditions
 $F(\alpha,\varepsilon)=(\theta_0,0,0)$ admit an analytic family of
 solutions $\alpha(\varepsilon)$ for $|\varepsilon|<\varepsilon_0$.
@@ -1025,8 +1028,9 @@ IFT prediction and the $998$-seed series:
   (over all $998$ seeds) of $1.68\%$ (1-term),
   $0.35\%$ (2-term), $0.07\%$ (3-term).
   For $k \geq 10$: $0.05\%$ (2-term), $0.003\%$ (3-term).
-  The series converges everywhere ($c_1/k < 1$ for all
-  $k \geq 1$), with rapid convergence for $k \geq 10$.
+  The expansion parameter satisfies $c_1/k < 1$ for all
+  $k \geq 1$, and the truncated asymptotic expansion is numerically
+  useful across the tested range, with rapid convergence for $k \geq 10$.
 \end{enumerate}
 
 \noindent
@@ -1052,7 +1056,7 @@ The ``axial subtraction trick'' yields a formal derivation of~$A$.
 Let $Z_0 = \lvert Z'(\omega)\rvert$ denote the norm of the
 frame derivative at the evaluation point, computed from the
 theta-function constants $(U, U', U_1', U_2)$ of
-Theorem~7 of~\cite{BHS-comp}.
+Theorem~7 of~\cite{BHS25}.
 Define the \emph{axial profile function}
 \begin{equation}\label{eq:Qt2-def}
   \tilde Q_2(s) \;=\; P\,s^2 - 2M\,s - 1,
@@ -1061,7 +1065,7 @@ where
 $P = U^{-2}(2(s_1{+}s_2)\,U_1' - U_2)$ and
 $M = U^{-2}(U' + s_1\,s_2\,U_1')$;
 this is the normalized form of the BHS axial
-numerator~\cite[Eq.~87]{BHS-comp}
+numerator~\cite[Eq.~87]{BHS25}
 (see~\cref{app:rigorous} for the detailed coefficients).
 
 When $\delta \to 0$, the real oval of $Q(s)$ pinches around~$s_2$
@@ -1089,10 +1093,11 @@ Setting $\theta/2 = \pi/k$:
   A^2 \;=\; \delta^2 k
   \;=\; \frac{2\,\tilde Q_2(s_{2,\infty})^2\,\Delta s^2}
              {Z_0\,\tilde Q_2'(s_{2,\infty})\,Q_3(s_{2,\infty})}
-  \;=\; 50.1468,
+  \;=\; 50.14645952466,
 \end{equation}
-with all factors evaluated at $\delta = 0$.  The Richardson value is
-$A^2 = 50.1465$, giving a relative error of~$6$~ppm.
+with all factors evaluated at $\delta = 0$.  With the displayed constants,
+this agrees with the Richardson value
+$A^2 = 50.1464595246613\ldots$ to the shown digits.
 
 \begin{remark}[Gauge invariance of $A^2/\Delta s$]\label{obs:gauge-invariant}
   The evaluation $\tilde Q_2(s_2)$ appearing in~\eqref{eq:A2-formula}
@@ -1640,9 +1645,8 @@ For each~$k$, the numerically continued curve $\gamma_k$ terminates at an
 existence boundary $s_1^*(k)$.  Near this boundary, the Jacobian becomes
 strongly anisotropic and the continuation diagnostics sharpen rapidly;
 beyond $s_1^*$, the periodicity system has no real solution:
-this provides the minimum $\abs{s_1}$ for the existence of a
-Bonnet pair at fold~$k$, consistent with the existence conditions
-of Lemma~9 of~\cite{BHS-comp}.
+numerically, this provides the minimum $\abs{s_1}$ detected along the
+tracked branch for the existence of a Bonnet pair at fold~$k$.
 For $k = 5$, the singularity lies at $s_1^* > -2.59$.
 \end{observation}
 
@@ -1954,13 +1958,15 @@ $\arg(\mathrm{CR})$ satisfies the asymptotic law:
   \label{eq:arg-4}
 \end{equation}
 Numerically: $-4.007$~rad at $k=5$, $-4.002$~rad at $k=10$,
-$-4.000$~rad at $k \geq 20$.  The convergence follows
+$-4.000$~rad at $k \geq 20$.  Numerically, the convergence is
+compatible with a fit of the form
 $\arg(\mathrm{CR})\cdot k = -4 + c_6/k^2 + \Oo(k^{-3})$,
 with $c_6 \approx -0.167$;
 i.e.\ $\mathrm{CR}_k \approx \ee^{-4\ii/k}$ asymptotically.
   Numerically, the leading correction is compatible with a vanishing
   $1/k$ term and a first visible contribution of order $k^{-2}$
-  (cf.\ \cref{prop:arg-4}).
+  (cf.\ \cref{prop:arg-4}).  This higher-order fit is observational and
+  is not used as theorem-level input.
 \end{observation}
 
 \begin{lemma}[Local splitting of the double branch points]
@@ -2576,7 +2582,7 @@ Then
   \tau_{\mathrm{spec}}(k)
   \;=\; -\frac{1}{2} + \ii\,\frac{\ln(4k)}{\pi} + \Oo(k^{-2}),
 \end{equation}
-supported numerically at the $6$-significant-digit level on $13$ archived
+supported numerically at the $6$-significant-digit level on $50$ archived
 spectral-period seeds spanning $k=5$ to $200$.  The residual
 $\lvert\tau_{\mathrm{spec}}^{\mathrm{num}} - \tau_{\mathrm{spec}}^%
   {\mathrm{formula}}\rvert < 3 \times 10^{-7}$
@@ -2615,7 +2621,7 @@ Equivalently,
   \;=\; 1 - \frac{1}{\mathrm{CR}_k}.
 \end{equation}
 On the archived full-precision spectral-period seed subset consisting of
-$13$ checked seeds in the range $k=5$ to $200$, a high-precision
+$50$ checked seeds in the range $k=5$ to $200$, a high-precision
 seed-level audit of this branch relation
 gives errors $<10^{-11}$.  On the rounded printed high-$k$ seed values, the
 same audit gives errors of order $10^{-10}$, consistent with the printed
@@ -2775,13 +2781,15 @@ $\delta_k(\tau_{\mathrm{BHS}})$ of the periodicity conditions
 depends on~$\tau_{\mathrm{BHS}}$ through the theta-function
 coefficients (the amplitude $A$ varies from $6.78$ to $7.27$
 across the tested range; \cref{thm:asymptotic}), so the
-cancellation in the cross-ratio is a deep structural property.
+cancellation in the cross-ratio is strong numerical evidence for a
+structural property.
 \end{observation}
 
 \begin{observation}[Asymptotic refinement of $\tau_{\mathrm{spec}}$]
 \label{cor:tau-refined}
 Assuming \cref{conj:tau-spec}, the formula is the leading term of an
-asymptotic expansion.  Numerically,
+asymptotic expansion.  Numerically, a secondary empirical fit on the
+tested spectral-period seeds is consistent with
 \begin{equation}\label{eq:tau-refined}
   \tau_{\mathrm{spec}}(k)
   \;=\; -\frac{1}{2}
@@ -2795,6 +2803,9 @@ one finds $R(k)\cdot k^2 \cdot \ln(4k) \to -1/8$
 with five stable digits for $k \le 100$.
 The next correction is $\Oo(k^{-4})$ with estimated
 coefficient $\approx -0.039/\pi$.
+This should be read only as a numerical refinement of the conjectural
+leading term, not as a proved or independently certified higher-order
+law.
 \end{observation}
 
 \begin{remark}[Interpretation of $\tau_{\mathrm{spec}}$]
@@ -3152,7 +3163,7 @@ We have:
   (\cref{conj:tau-spec}), with leading nome
   $q_{\mathrm{spec}} = -\ii/(4k)$, together with the corrected branch
   relation $\mathrm{CR}_k=(1-\lambda(\tau_{\mathrm{spec}}(k)))^{-1}$,
-  a finite-data audit on $13$ archived spectral-period seeds in the
+  a finite-data audit on $50$ archived spectral-period seeds in the
   verified range $k=5$ to $200$, and a conditional explanation of
   $\Real\,\tau_{\mathrm{spec}}=-1/2$,
 \item validated the retraction form on $8$ representative seeds via a
@@ -3450,12 +3461,16 @@ The principal data products used in this version of the paper are:
 \item \path{results/phase15_asymptotic/critical_recheck/}:
   residual re-solve audit for the $108$ critical rows of the archived
   $998$-seed branch file,
+\item \path{data/high_precision_checkpoints.json}:
+  archived $120$-seed high-precision checkpoint set used for the
+  Richardson extrapolation and the finite checkpoint validation in
+  \cref{thm:asymptotic,obs:rigorous-asymp},
 \item \path{paper/figures/*.pdf}: manuscript figures,
 \item \path{results/B3/finite_certificate/}: exact-rational finite
   root-topology certificates for the archived B3 seed and sweep data,
 \item \path{results/B4/high_precision/B4_full_precision_seed_data_kle200.csv}
   and companion summary JSON: archived full-precision B4 seed-level audit on
-  the verified $13$-seed subset in the range $k=5$ to $200$,
+  the verified $50$-seed subset in the range $k=5$ to $200$,
 \item \path{results/C2/raw_grid/}: archived raw-grid C2 normalization audits.
 \end{itemize}
 
@@ -4095,7 +4110,8 @@ A.\,I.~Bobenko, T.~Hoffmann, and A.\,O.~Sageman-Furnas.
 A.\,I.~Bobenko, T.~Hoffmann, and A.\,O.~Sageman-Furnas.
 \newblock Isothermic tori with one family of planar curvature lines and area
   constrained hyperbolic elastica.
-\newblock Preprint, 2023.
+\newblock \emph{Int.\ Math.\ Res.\ Not.\ IMRN}, 2025(24):rnaf349.
+\newblock DOI: 10.1093/imrn/rnaf349.
 \newblock arXiv:2312.14956 [math.DG].
 
 \bibitem{BCHR25}

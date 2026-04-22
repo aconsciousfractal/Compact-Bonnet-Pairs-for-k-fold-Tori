@@ -286,7 +286,10 @@ def main() -> None:
     out_json.parent.mkdir(parents=True, exist_ok=True)
     seeds, analysis_ks = load_seed_sources()
     if selected_ks is not None:
-        analysis_ks = [k for k in analysis_ks if k in selected_ks]
+        missing = [k for k in selected_ks if k not in seeds]
+        if missing:
+            raise ValueError(f"Requested k values not available in seed sources: {missing}")
+        analysis_ks = selected_ks
     const = init_constants_mp(dps)
 
     rows: list[dict[str, str]] = []

@@ -24,6 +24,7 @@ pip install -r requirements.txt
 | Main 998-seed branch file | `results/phase15_asymptotic/full_series_k3_1000.json` |
 | Compatibility mirror | `data/full_series_k3_1000.json` |
 | Phase-15 critical-row recheck | `results/phase15_asymptotic/critical_recheck/` |
+| High-precision checkpoint set | `data/high_precision_checkpoints.json` |
 | B3 finite-certificate layer | `results/B3/finite_certificate/` |
 | B4 high-precision audit | `results/B4/high_precision/` |
 | C2 raw-grid audit | `results/C2/raw_grid/` |
@@ -80,12 +81,11 @@ python scripts/export_B4_high_precision_seed_data.py
 Paper-cited verified-range export:
 
 ```bash
-python scripts/export_B4_high_precision_seed_data.py --ks 5,7,10,15,20,25,30,40,50,75,100,150,200 --out-csv results/B4/high_precision/B4_full_precision_seed_data_kle200.csv --out-json results/B4/high_precision/B4_full_precision_seed_data_kle200_summary.json
+python scripts/export_B4_high_precision_seed_data.py --ks 5,7,10,12,14,16,18,20,22,24,26,28,30,35,40,45,50,55,60,65,70,75,80,85,90,95,100,105,110,115,120,125,130,135,140,145,150,155,160,165,170,175,180,185,190,192,194,196,198,200 --out-csv results/B4/high_precision/B4_full_precision_seed_data_kle200.csv --out-json results/B4/high_precision/B4_full_precision_seed_data_kle200_summary.json
 ```
 
 This reproduces the checked-in verified-range subset, which currently consists
-of the `13` archived spectral-period seeds available from the P10 selection
-inside `results/P10/P10_2_spectral_periods.json`.
+of `50` archived spectral-period seeds in the range `k=5..200`.
 
 ### 5. Rebuild the C2 raw-grid audit layer
 
