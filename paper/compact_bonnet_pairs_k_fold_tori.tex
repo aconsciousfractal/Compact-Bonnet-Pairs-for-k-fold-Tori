@@ -1,4 +1,4 @@
-%% main.tex — Compact Bonnet Pairs: Computational Extension to 998 Seeds
+%% main.tex Ã¢â‚¬â€ Compact Bonnet Pairs: Computational Extension to 998 Seeds
 %% and an Asymptotic Law for the Closure Parameter
 %%
 %% Target: Experimental Mathematics (Taylor & Francis)
@@ -6,7 +6,7 @@
 %%
 \documentclass[11pt,a4paper]{article}
 
-%% ── Packages ─────────────────────────────────────────────────────────
+%% Ã¢â€â‚¬Ã¢â€â‚¬ Packages Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
@@ -24,7 +24,7 @@
 \usepackage{geometry}
 \geometry{margin=2.5cm}
 
-%% ── Theorem environments (BHS style) ──────────────────────────────
+%% Ã¢â€â‚¬Ã¢â€â‚¬ Theorem environments (BHS style) Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
 \theoremstyle{plain}
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{proposition}[theorem]{Proposition}
@@ -63,7 +63,7 @@
 \renewcommand*{\theHremark}{\theHtheorem}
 \makeatother
 
-%% ── Notation ────────────────────────────────────────────────────────
+%% Ã¢â€â‚¬Ã¢â€â‚¬ Notation Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
 \DeclareMathOperator{\Real}{Re}
 \DeclareMathOperator{\Imag}{Im}
 \DeclareMathOperator{\tr}{tr}
@@ -82,7 +82,7 @@
 \newcommand{\norm}[1]{\lVert #1 \rVert}
 \newcommand{\Oo}{\mathcal{O}}
 
-%% ── Title ───────────────────────────────────────────────────────────
+%% Ã¢â€â‚¬Ã¢â€â‚¬ Title Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
 \title{%
   Compact Bonnet Pairs for $k$-fold Tori:\\
   998 Computed Seeds and a High-Fold $k^{-1/2}$
@@ -93,11 +93,11 @@
 }
 \date{}
 
-%% ═════════════════════════════════════════════════════════════════════
+%% Ã¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢Â
 \begin{document}
 \maketitle
 
-%% ── Abstract ────────────────────────────────────────────────────────
+%% Ã¢â€â‚¬Ã¢â€â‚¬ Abstract Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
 \begin{abstract}
 Bobenko, Hoffmann, and Sageman-Furnas~\cite{BHS25} constructed
 compact Bonnet pairs from isothermic tori whose closing conditions
@@ -147,9 +147,9 @@ basis families.
 \noindent\textbf{MSC\,2020:}
   53A05, 53C42, 33E05, 65D30, 34M55.
 
-%% ═════════════════════════════════════════════════════════════════════
+%% Ã¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢Â
 \section{Introduction}\label{sec:intro}
-%% ═════════════════════════════════════════════════════════════════════
+%% Ã¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢Â
 
 \subsection{The Bonnet problem}
 A classical problem due to Bonnet~\cite{Bon67} asks whether two
@@ -210,11 +210,12 @@ Our contributions are as follows.
   law.  We also record the observed $c_3/k^2$ correction and the local
   amplitude formula~\eqref{eq:A2-formula}.
 \item \textbf{Spectral structure.}
-  We establish the local branch-point splitting mechanism, a local
-  high-fold branch theorem, large-$k$ root topology, and an exact local
-  closure identity for the cross-ratio coefficient.  On the finite
-  archived layer, the root topology is certified on the recorded
-  seed/sweep rows.  At $\omega_{\mathrm{crit}}$, the spectral
+  We establish a local branch-point splitting mechanism, a local
+  high-fold branch theorem, the large-$k$ root topology, and an exact
+  local closure identity for the cross-ratio coefficient.  On the
+  finite archived layer, the root topology is certified on the
+  recorded seed/sweep rows by exact-rational Sturm certificates.  At
+  $\omega_{\mathrm{crit}}$, the spectral
   cross-ratio satisfies $\lvert\arg(\mathrm{CR})\rvert\cdot k\to4$,
   and the corrected branch relation is
   $\mathrm{CR}_k=(1-\lambda(\tau_{\mathrm{spec}}(k)))^{-1}$.
@@ -268,9 +269,9 @@ geometric identities (\cref{sec:analytical}) and retraction-form
 validation (\cref{sec:retraction}) providing independent
 cross-checks.
 
-%% ═════════════════════════════════════════════════════════════════════
+%% Ã¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢Â
 \section{Mathematical Preliminaries}\label{sec:prelim}
-%% ═════════════════════════════════════════════════════════════════════
+%% Ã¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢Â
 
 We work on an elliptic curve with rhombic lattice
 $\Lambda = \pi\ZZ + \pi\tau\ZZ$, where
@@ -312,6 +313,135 @@ $q = \ii\,\ee^{-\pi\lambda}$.
   standard algorithms~\cite{Dee11}; for
   $\lambda \geq 0.3$ this gives $\abs{q}^{2500} < 10^{-16}$, ensuring
   machine-precision convergence.
+\end{remark}
+
+\subsection{Reality of the rhombic Jacobi theta data}
+\label{sec:theta-reality}
+
+The spectral coefficients defined in~\cref{sec:coeff} below are
+rational expressions in the Jacobi theta constants
+$\vt{j}(0|\tau)$, $\vt{j}(\omega|\tau)$, and the derivative
+$\vt{1}'(0|\tau)$, all evaluated on the rhombic lattice
+$\tau = \tfrac12 + \ii\lambda$ at a real critical point
+$\omega \in (0,\pi/4)$. Individually these theta values are complex.
+We record the elementary reality lemma that makes the Lam\'e--Riccati
+coefficients $R(\omega)$, $U(\omega)$, $U'(\omega)$, $U_1'(\omega)$,
+$U_2(\omega)$ real without any additional normalization choice.
+
+Let
+\begin{equation}
+  p \;:=\; q^{1/4} \;=\; \ee^{\ii\pi\tau/4}
+  \;=\; \ee^{\ii\pi/8}\,\ee^{-\pi\lambda/4}
+  \label{eq:p-phase}
+\end{equation}
+denote the principal quarter-nome; its modulus is $\ee^{-\pi\lambda/4}$
+and its phase is the fixed angle $\pi/8$.
+
+\begin{lemma}[Phase factorisation of rhombic Jacobi theta values]
+\label{lem:rhombic-parity}
+Let $\tau = \tfrac12 + \ii\lambda$ with $\lambda > 0$ and
+$q = \ee^{\ii\pi\tau}$, and let $z \in \RR$.
+Writing $p = q^{1/4}$ as in~\eqref{eq:p-phase}:
+\begin{enumerate}[label=(\roman*),nosep]
+\item\label{item:p-factor}
+  $p^{-1}\,\vt{1}(z,q) \in \RR$,
+  $p^{-1}\,\vt{2}(z,q) \in \RR$, and
+  $p^{-1}\,\vt{1}'(0,q) \in \RR$; equivalently, $\vt{1}$ and
+  $\vt{2}$ (and the $z$-derivative of $\vt{1}$ at $0$) have constant
+  argument $\pi/8$ modulo $\pi$ on the real $z$-axis.
+\item\label{item:conj-swap}
+  $\vt{4}(z,q) = \overline{\vt{3}(z,q)}$; in particular,
+  $\vt{j}(z,q)^2 + \vt{j+1}(z,q)^2 = 2\,\Real\bigl[\vt{3}(z,q)^2\bigr] \in \RR$
+  for $(j,j{+}1) = (3,4)$.
+\end{enumerate}
+\end{lemma}
+
+\begin{proof}
+Using the product/series expansions equivalent
+to~\eqref{eq:theta1}--\eqref{eq:theta2},
+\begin{align*}
+  \vt{1}(z,q) &= 2\,q^{1/4}\sum_{n\ge 0}(-1)^n\,q^{n(n+1)}\sin((2n+1)z),\\
+  \vt{2}(z,q) &= 2\,q^{1/4}\sum_{n\ge 0}q^{n(n+1)}\cos((2n+1)z),
+\end{align*}
+the overall $q^{1/4} = p$ factor is common to every nonvanishing term.
+The remaining inner series involve only integer powers of $q$. For
+the rhombic lattice, $q = \ii\,\ee^{-\pi\lambda}$, so
+$q^{n(n+1)} = \ii^{n(n+1)}\,\ee^{-\pi n(n+1)\lambda}$. Since $n(n+1)$
+is even, $\ii^{n(n+1)} = (-1)^{n(n+1)/2} \in \{\pm 1\}$. Hence the
+inner sums are real for $z \in \RR$, proving~\ref{item:p-factor} for
+$\vt{1}$ and $\vt{2}$. The case $\vt{1}'(0,q)$ follows by termwise
+$z$-differentiation of the $\vt{1}$-series at $z=0$.
+
+For~\ref{item:conj-swap}, substituting $q = \ii\,\ee^{-\pi\lambda}$
+into $\vt{3}(z,q) = 1 + 2\sum_{n\ge 1} q^{n^2}\cos(2nz)$ and into
+$\vt{4}(z,q) = 1 + 2\sum_{n\ge 1}(-1)^n q^{n^2}\cos(2nz)$ uses
+$\ii^{n^2} = 1$ for $n$ even and $\ii^{n^2} = \ii$ for $n$ odd
+(since $n^2 \equiv 0$ or $1 \pmod 4$). Both expansions split into
+an even-$n$ block (real) and an odd-$n$ block (purely imaginary).
+In $\vt{4}$ the odd-$n$ block carries an extra $-1$ from $(-1)^n$;
+the even-$n$ block is unchanged. Hence
+$\vt{4}(z,q) = \overline{\vt{3}(z,q)}$ for $z \in \RR$. The
+stated consequence follows from $a + \bar a = 2\,\Real(a)$.
+\end{proof}
+
+\begin{proposition}[Reality of $R, U, U', U_1', U_2$ on the rhombic
+lattice]\label{prop:spectral-reality}
+For $\tau = \tfrac12 + \ii\lambda$ and any real $\omega \in (0,\pi/4)$,
+the Lam\'e--Riccati coefficients
+$R(\omega), U(\omega), U'(\omega), U_1'(\omega), U_2(\omega)$
+defined by~\eqref{eq:Romega}--\eqref{eq:U2} are real. Consequently,
+the cubic $Q_3$ in~\eqref{eq:Q3} and the quartic $Q$ in~\eqref{eq:Q}
+have real coefficients whenever $\delta, s_1, s_2 \in \RR$ (or
+$(s_1,s_2)$ is a complex-conjugate pair).
+\end{proposition}
+
+\begin{proof}
+By \cref{lem:rhombic-parity}\ref{item:p-factor}, each of
+$\vt{1}(z,q),\ \vt{2}(z,q),\ \vt{1}'(0,q)$ factors as $p\cdot\rho(z)$
+with $\rho(z) \in \RR$. In every defining
+expression~\eqref{eq:Romega}--\eqref{eq:U1prime}, the numerator and
+denominator are monomials in these quantities of the \emph{same total
+degree} in $\vt{1},\vt{2},\vt{1}'(0)$: $R(\omega)$ and $U_1'(\omega)$
+pair degree $2$ over degree $2$, and $U'(\omega)$ pairs degree $2$
+over degree $2$.  Hence the common $p$-factor cancels and the ratio
+lies in $\RR$.  The identity $U(\omega) = -1/R(\omega)$ then gives
+$U(\omega) \in \RR$.
+
+For $U_2(\omega)$ the prefactor $\vt{1}'(0)^2/\vt{2}(\omega)^2$ has
+net $p$-weight zero and is real by the same argument.  Of the three
+bracketed summands, $\vt{1}(\omega)^2/\vt{2}(0)^2$ is also a ratio of
+same-$p$-weight monomials, hence real. The remaining two summands
+combine as
+\[
+  A + B,\qquad
+  A \;=\; \frac{\vt{4}(\omega)^2}{\vt{3}(0)^2},\qquad
+  B \;=\; \frac{\vt{3}(\omega)^2}{\vt{4}(0)^2},
+\]
+and \cref{lem:rhombic-parity}\ref{item:conj-swap} gives
+$\vt{4}(\cdot) = \overline{\vt{3}(\cdot)}$ at real argument, whence
+$A = \overline{B}$ and $A + B = 2\,\Real(B) \in \RR$. Combining gives
+$U_2(\omega) \in \RR$. The statement for $Q_3, Q$ follows because
+their coefficients in~\eqref{eq:Q3}--\eqref{eq:Q} are real polynomial
+functions of the already-established real quantities and of the real
+(or complex-conjugate-pair) data $\delta, s_1, s_2$.
+\end{proof}
+
+\begin{remark}[Relation to the computational pipeline]
+\label{rem:real-normalization}
+\Cref{prop:spectral-reality} is the mathematical content of the
+``real-normalization'' used by the computational pipeline. The casts
+\texttt{float(np.real(\dots))} applied in
+\path{scripts/compute_constants.py} (which produces the Appendix~A
+table) are legitimate once the Lam\'e--Riccati coefficients
+$R, U, U', U_1', U_2$ have been formed: at that stage the imaginary
+part is zero up to machine epsilon, as verified numerically at
+$\abs{\Imag}/\abs{\cdot} \lesssim 10^{-16}$ on the reference lattice
+$\lambda = 25/78$. The underlying reality is not a pipeline choice
+but the algebraic consequence of
+\cref{lem:rhombic-parity}\ref{item:p-factor} and
+\cref{prop:spectral-reality}: $p$ factors cancel from every ratio of
+the same total degree in $\vt{1},\vt{2},\vt{1}'(0)$, and the
+$\vt{3}/\vt{4}$ terms in $U_2$ are real by conjugate-swap symmetry.
 \end{remark}
 
 \subsection{Spectral curve coefficients}\label{sec:coeff}
@@ -382,9 +512,9 @@ $\mu^2 = Q(s)$ is elliptic (genus~$1$).
 \end{remark}
 
 
-%% ═════════════════════════════════════════════════════════════════════
+%% Ã¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢Â
 \section{Periodicity Conditions}\label{sec:periodicity}
-%% ═════════════════════════════════════════════════════════════════════
+%% Ã¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢Â
 
 For the isothermic cylinder to close into a $k$-fold torus, two
 conditions must be satisfied simultaneously.  We follow the notation of
@@ -480,9 +610,9 @@ with
 \end{remark}
 
 
-%% ═════════════════════════════════════════════════════════════════════
+%% Ã¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢Â
 \section{Computational Framework}\label{sec:computational}
-%% ═════════════════════════════════════════════════════════════════════
+%% Ã¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢Â
 
 \subsection{Architecture overview}\label{sec:arch}
 The computational pipeline consists of five independent modules:
@@ -557,27 +687,27 @@ $2 \times 2$ Newton iteration with the following features:
   solver succeeds with Euclidean residual norm
   $\|(F_{\mathrm{rat}},F_{\mathrm{ax}})\|_2 < 10^{-6}$ and stores the
   SciPy function-evaluation count \texttt{nfev}.  The checked-in
-  \path{results/phase15_asymptotic/full_series_k3_1000.json} is a merged branch file rather than a
-  uniform raw solver dump: $890$ rows already store nonzero residual norms
-  $<10^{-10}$, the block $k=10..30$ carries rounded seed values with
-  placeholder \texttt{residual=nfev=0}, and $87$ further rows store
-  residual norms in $[10^{-10}, 4.6\times 10^{-10}]$.
+  \path{results/phase15_asymptotic/full_series_k3_1000.json} is a uniform
+  raw solver dump of $998$ rows: $950$ rows have residual
+  $<10^{-10}$ and the remaining $48$ rows have residuals in
+  $[10^{-10},\,5.35\times 10^{-10}]$; the archive-wide maximum residual
+  is $5.35\times 10^{-10}$ and every row has $\texttt{nfev}\ge 8$.
 \end{itemize}
 
 \begin{remark}[Archive-level residual audit for the $998$-seed branch]
-  To put the checked-in branch file on a uniform footing for this paper,
-  we directly re-solve the $108$ critical rows from their archived
+  To put the $48$ rows of the archive whose residual exceeds $10^{-10}$
+  on an independent footing, we re-solve them from their archived
   $(\delta,s_2)$ values using
   \path{scripts/export_phase15_critical_recheck.py}.  The resulting audit
   is archived in
   \path{results/phase15_asymptotic/critical_recheck/}.
-  All $108$ re-solves succeed.  Their returned residuals satisfy
+  All $48$ re-solves succeed.  Their returned residuals satisfy
   \[
     \max\bigl(\abs{F_{\mathrm{rat}}},\abs{F_{\mathrm{ax}}}\bigr)
-    < 1.6\times 10^{-10},
+    < 1.3\times 10^{-10},
   \]
   so the full $998$-seed branch is supported by a mixed archive/recheck
-  residual audit at the $2\times 10^{-10}$ level.  The archive field
+  residual audit at the $6\times 10^{-10}$ level.  The archive field
   \texttt{nfev} is a solver function-evaluation count, not a Newton-step
   counter, and we do not use it as a theorem-level performance claim.
 \end{remark}
@@ -619,17 +749,17 @@ construction is substantially more expensive than G1--G4
 and serves as an independent cross-check, not a universal gate).
 
 \subsection{Computational cost}
-The full series $k = 3, \ldots, 1000$ is computed in approximately
-$12$ minutes on a single core (Python~3.11, NumPy/SciPy;
-Intel Core i7-12700H, 2.3\,GHz), dominated by
-the elliptic integrals in the Newton iterations.  No parallelization
-or compiled code is employed.
+The full series $k = 3, \ldots, 1000$ is produced by a single-threaded
+run of \path{scripts/run_full_series.py} (Python~3.11,
+NumPy/SciPy); wall-clock time depends on the host machine and is
+dominated by the elliptic integrals in the Newton iterations.  No
+parallelization or compiled code is employed.
 
 
-%% ═════════════════════════════════════════════════════════════════════
+%% Ã¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢Â
 \section{Reproduction of Known Examples and Extension to
   \texorpdfstring{$k > 6\times 10^5$}{k > 600000}}\label{sec:extension}
-%% ═════════════════════════════════════════════════════════════════════
+%% Ã¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢Â
 
 \subsection{Reproduction of BHS examples}\label{sec:repro}
 As a first verification, we reproduce the $k = 3$ and $k = 4$
@@ -646,14 +776,14 @@ $\tau = \tfrac12 + 0.3205128205\,\ii$.
 \toprule
 $k$ & $\delta_k$ & $s_{2,k}$ & Residual & $\theta\,(^\circ)$ \\
 \midrule
-3  & $3.201588670$ & $2.506142163$ & $2.8 \times 10^{-12}$ & 120 \\
-4  & $2.924732426$ & $3.277404492$ & $2.2 \times 10^{-12}$ & 90 \\
-5  & $2.707932982$ & $3.847434121$ & $6.8 \times 10^{-12}$ & 72 \\
-6  & $2.532186462$ & $4.281550094$ & $5.3 \times 10^{-12}$ & 60 \\
-7  & $2.386167633$ & $4.621565278$ & $2.8 \times 10^{-13}$ & 51.43 \\
-8  & $2.262463448$ & $4.894397705$ & $1.2 \times 10^{-12}$ & 45 \\
-9  & $2.155984937$ & $5.117845227$ & $1.1 \times 10^{-12}$ & 40 \\
-10 & $2.063114437$ & $5.304037890$ & $5.0 \times 10^{-12}$ & 36 \\
+3  & $3.201588670$ & $2.506142163$ & $8.3 \times 10^{-12}$ & 120 \\
+4  & $2.924732426$ & $3.277404492$ & $3.1 \times 10^{-12}$ & 90 \\
+5  & $2.707932982$ & $3.847434121$ & $1.4 \times 10^{-11}$ & 72 \\
+6  & $2.532186462$ & $4.281550094$ & $5.1 \times 10^{-12}$ & 60 \\
+7  & $2.386167633$ & $4.621565278$ & $2.3 \times 10^{-11}$ & 51.43 \\
+8  & $2.262463448$ & $4.894397705$ & $1.2 \times 10^{-11}$ & 45 \\
+9  & $2.155984937$ & $5.117845227$ & $7.1 \times 10^{-13}$ & 40 \\
+10 & $2.063114437$ & $5.304037890$ & $6.6 \times 10^{-12}$ & 36 \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -667,7 +797,7 @@ failures are detected in the archived $k = 3,\ldots,1000$
 continuation.
 \Cref{fig:delta-vs-k} shows $\delta_k$ versus~$k$
 on a log--log scale: the data collapse onto a straight line with
-slope $-0.5$, the first visual evidence for \cref{thm:asymptotic}.
+slope $-0.5$, the first visual evidence for \cref{valid:asymptotic}.
 
 The final three seeds illustrate the high-$k$ behavior:
 \begin{center}
@@ -676,8 +806,8 @@ The final three seeds illustrate the high-$k$ behavior:
 $k$ & $\delta_k$ & $s_{2,k}$ & Residual & $\theta\,(^\circ)$ \\
 \midrule
 998  & $0.22396586$ & $7.29954605$ & $1.3 \times 10^{-11}$ & $0.3607$ \\
-999  & $0.22385393$ & $7.29956973$ & $3.0 \times 10^{-11}$ & $0.3604$ \\
-1000 & $0.22374216$ & $7.29959337$ & $3.9 \times 10^{-11}$ & $0.3600$ \\
+999  & $0.22385393$ & $7.29956973$ & $2.3 \times 10^{-11}$ & $0.3604$ \\
+1000 & $0.22374216$ & $7.29959337$ & $1.9 \times 10^{-11}$ & $0.3600$ \\
 \bottomrule
 \end{tabular}
 \end{center}
@@ -686,7 +816,6 @@ As a consistency check, $\delta_{1000}^2 \cdot 1000 = 50.06 \approx
 A^2 = 50.1465$ and $\delta_{1000}\sqrt{1000} = 7.075 \approx A =
 7.0814$; the finite-$k$ correction accounts for the small discrepancy.
 
-%% Placeholder for figure:
 \begin{figure}[ht]
   \centering
   \includegraphics[width=0.65\textwidth]{figures/delta_vs_k.pdf}
@@ -725,9 +854,9 @@ the full-precision verification is restricted to $k \le 1000$, and a
 small number of wobble points may correspond to adjacent-fold captures.
 
 
-%% ═════════════════════════════════════════════════════════════════════
+%% Ã¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢Â
 \section{Asymptotic Law}\label{sec:asymptotic}
-%% ═════════════════════════════════════════════════════════════════════
+%% Ã¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢Â
 
 \subsection{Running-exponent analysis}\label{sec:running}
 Define the local decay exponent
@@ -776,7 +905,7 @@ bound, and the quoted numerical value of the amplitude are supported
 by computer-assisted validation.
 
 \begin{validatedclaim}[Computer-assisted asymptotic law on the
-  computed branch]\label{thm:asymptotic}
+  computed branch]\label{valid:asymptotic}
   For the gauge $s_1 = -8.5$, $\tau = \tfrac12 + 0.3205128205\,\ii$,
   the computed branch of closure parameters
   $\delta_k$ for $k = 100,\ldots,5000$ (on the $120$-seed checkpoint
@@ -800,7 +929,7 @@ by computer-assisted validation.
   with the same scaling law.
 \end{validatedclaim}
 \begin{proof}
-  See \cref{app:rigorous}: \cref{thm:local-high-fold-branch,prop:rigorous-asymp}.
+  See \cref{app:rigorous}: \cref{thm:local-high-fold-branch,obs:rigorous-asymp}.
   The local theorem gives the analytic mechanism and the
   $k^{-1/2}$ law near the pinched oval.  The explicit bound on the
   remainder ($C \le 6$) is validated numerically on the $120$-seed
@@ -813,7 +942,7 @@ by computer-assisted validation.
 \end{proof}
 
 \begin{remark}
-  \Cref{thm:asymptotic} has a mixed local-analytic/numerical status.
+  \Cref{valid:asymptotic} has a mixed local-analytic/numerical status.
   On the local high-fold branch, the $k^{-1/2}$ form and the
   closed-form expression for~$A^2$ (\cref{sec:spectral-remainder})
   arise from the local analytic theorem of \cref{app:rigorous}.
@@ -1099,7 +1228,7 @@ with all factors evaluated at $\delta = 0$.  With the displayed constants,
 this agrees with the Richardson value
 $A^2 = 50.1464595246613\ldots$ to the shown digits.
 
-\begin{remark}[Gauge invariance of $A^2/\Delta s$]\label{obs:gauge-invariant}
+\begin{remark}[Gauge invariance of $A^2/\Delta s$]\label{rem:gauge-invariant}
   The evaluation $\tilde Q_2(s_2)$ appearing in~\eqref{eq:A2-formula}
   depends only on~$s_2$ and the Lam\'e--Riccati coefficients
   $U, U', U_1', U_2$:
@@ -1154,7 +1283,7 @@ of logarithmic terms.
   All three bounds are obtainable by standard singular-perturbation
   techniques; in~\cref{app:rigorous} we record the local analytic
   theorem and the accompanying numerical validations behind
-  \cref{prop:rigorous-asymp}.
+  \cref{obs:rigorous-asymp}.
 \end{remark}
 
 \subsection{PSLQ analysis}\label{sec:pslq}
@@ -1268,9 +1397,9 @@ used by the computational pipeline.
 \end{remark}
 
 
-%% ═════════════════════════════════════════════════════════════════════
+%% Ã¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢Â
 \section{Geometric Identities}\label{sec:analytical}
-%% ═════════════════════════════════════════════════════════════════════
+%% Ã¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢Â
 
 \subsection{Stereographic lift and unit-sphere identity}
 \label{sec:unit-circle}
@@ -1311,7 +1440,7 @@ Writing $r^2 = \abs{f(p)}^2$, one has
   implementation.
 \end{remark}
 
-\subsection{Conformality on \texorpdfstring{$S^3$}{S³}}\label{sec:conformality}
+\subsection{Conformality on \texorpdfstring{$S^3$}{SÃ‚Â³}}\label{sec:conformality}
 A deeper benchmark concerns one component of the conformality conditions
 for $x$: in isothermic coordinates one expects both
 $\abs{x_u}^2 = \abs{x_v}^2$ and $\Real(\bar{x}_u\,x_v) = 0$.
@@ -1321,7 +1450,7 @@ relevant to the retraction-form pipeline.
 
 \begin{computationalcertificate}[Conformality improvement in the
   analytic-derivative validation runs]
-\label{prop:conformality}
+\label{cert:conformality}
 Using analytic derivatives computed from the chain rule through
 the $\psi = \vt{1}'/\vt{1}$ identity, the conformality residual
 \[
@@ -1540,9 +1669,9 @@ though established from a limited sample ($N=8$).
 \end{figure}
 
 
-%% ═════════════════════════════════════════════════════════════════════
+%% Ã¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢Â
 \section{Moduli-Space Flow and Spectral Invariants}\label{sec:flow}
-%% ═════════════════════════════════════════════════════════════════════
+%% Ã¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢Â
 
 The periodicity system $F(\delta, s_2; s_1) = 0$
 (\cref{eq:F-rat,eq:F-ax}) defines a smooth curve
@@ -2591,7 +2720,7 @@ for the tested seeds with $k \ge 50$.
 
 \begin{remark}
 The real part $\Real\,\tau_{\mathrm{spec}} = -\tfrac12$ is
-accounted for in \cref{prop:tau-univ} under the corrected
+accounted for in \cref{cond:tau-univ} under the corrected
 branch-normalization assumptions.  The imaginary part
 $\Imag\,\tau_{\mathrm{spec}} = \ln(4k)/\pi$ rests entirely on
 numerical evidence ($6$-digit agreement) and remains open.
@@ -2725,23 +2854,31 @@ that graph is exactly $x=-\tfrac12$.
 
 \begin{conditionaltheorem}[Real part of the spectral modulus under the
   corrected lambda branch]
-\label{prop:tau-univ}
-Assume the mixed root topology and ordering
-$r_1=c$, $r_2=\bar c$, $r_3=a$, $r_4=b$ either from
-\cref{thm:large-fold-root-topology}, from the exact finite certificates
-summarized in \cref{obs:root-type}, or from the interval-certificate
-hypotheses of \cref{prop:finite-root-topology-certificate}.  Assume
-also the corrected branch relation~\eqref{eq:lambda-CR-corrected}.
-Finally, take the spectral modulus in the high-cusp branch whose nome
-satisfies
-\[
-  q_{\mathrm{spec}}=
-  \ee^{\pi\ii\tau_{\mathrm{spec}}}
-  \sim -\frac{\ii}{4k},
-\]
-so that, for $k$ large enough, $\tau_{\mathrm{spec}}$ lies in the
-local neighbourhood governed by \cref{lem:lambda-boundary-circle}.
-Then, for all sufficiently large fold numbers on that branch,
+\label{cond:tau-univ}
+Under the following hypotheses:
+\begin{enumerate}[label=\textup{(H\arabic*)},nosep,leftmargin=*]
+\item\label{hyp:root-ordering}
+  the mixed root topology and ordering $r_1=c$, $r_2=\bar c$,
+  $r_3=a$, $r_4=b$ holds, established either asymptotically by
+  \cref{thm:large-fold-root-topology}, from the exact finite
+  certificates summarised in \cref{obs:root-type}, or from the
+  interval-certificate hypotheses of
+  \cref{prop:finite-root-topology-certificate};
+\item\label{hyp:lambda-corrected}
+  the corrected branch relation~\eqref{eq:lambda-CR-corrected} applies,
+  namely $\mathrm{CR}_k = (1-\lambda(\tau_{\mathrm{spec}}(k)))^{-1}$;
+\item\label{hyp:cusp-branch}
+  the spectral modulus is taken in the high-cusp branch whose nome
+  satisfies
+  \[
+    q_{\mathrm{spec}} = \ee^{\pi\ii\tau_{\mathrm{spec}}}
+    \sim -\frac{\ii}{4k},
+  \]
+  so that, for $k$ large enough, $\tau_{\mathrm{spec}}$ lies in the
+  local neighbourhood governed by
+  \cref{lem:lambda-boundary-circle},
+\end{enumerate}
+for all sufficiently large fold numbers $k$ on that branch,
 \begin{equation}\label{eq:Re-tau-spec-minus-half}
   \Real\,\tau_{\mathrm{spec}}(k)=-\frac12 .
 \end{equation}
@@ -2750,14 +2887,15 @@ after choosing this cusp representative.
 \end{conditionaltheorem}
 
 \begin{proof}
-The mixed root ordering gives $\abs{\mathrm{CR}_k}=1$ by
-\cref{lem:CR-unit}.  Using the corrected transform
-\eqref{eq:lambda-CR-corrected}, this is equivalent to
+By~\ref{hyp:root-ordering}, the mixed root ordering gives
+$\abs{\mathrm{CR}_k}=1$ by \cref{lem:CR-unit}.  Using the corrected
+transform~\eqref{eq:lambda-CR-corrected} from~\ref{hyp:lambda-corrected}, this is equivalent to
 \[
   \abs{1-\lambda(\tau_{\mathrm{spec}}(k))}=1.
 \]
-The nome condition $q_{\mathrm{spec}}\sim-\ii/(4k)$ selects the cusp
-component with $\Real\tau$ near $-\tfrac12$.  The local uniqueness
+The nome condition $q_{\mathrm{spec}}\sim-\ii/(4k)$
+from~\ref{hyp:cusp-branch} selects the cusp component with
+$\Real\tau$ near $-\tfrac12$.  The local uniqueness
 part of \cref{lem:lambda-boundary-circle} then forces
 $\Real\tau_{\mathrm{spec}}=-\tfrac12$ on this branch for $k$ large
 enough.
@@ -2780,7 +2918,7 @@ This universality is non-trivial: the solution
 $\delta_k(\tau_{\mathrm{BHS}})$ of the periodicity conditions
 depends on~$\tau_{\mathrm{BHS}}$ through the theta-function
 coefficients (the amplitude $A$ varies from $6.78$ to $7.27$
-across the tested range; \cref{thm:asymptotic}), so the
+across the tested range; \cref{valid:asymptotic}), so the
 cancellation in the cross-ratio is strong numerical evidence for a
 structural property.
 \end{observation}
@@ -2812,7 +2950,7 @@ law.
 \label{rem:tau-spec-meaning}
 The real part $\Real\,\tau_{\mathrm{spec}} = -1/2$ is supported by the
 spectral-period computations and is accounted for by
-\cref{prop:tau-univ} once the corrected anharmonic transform between
+\cref{cond:tau-univ} once the corrected anharmonic transform between
 $\lambda(\tau_{\mathrm{spec}})$ and the branch-point cross-ratio is fixed.
 The imaginary part
 $\Imag\,\tau_{\mathrm{spec}} = \ln(4k)/\pi - 1/(8\pi k^2)
@@ -2872,7 +3010,7 @@ a curve in the $(\delta,s_2)$-plane parametrized by~$s_1$.
 
 \begin{computationalcertificate}[Simple-arc embedding on the tested
   folds]
-\label{prop:simple-arc}
+\label{cert:simple-arc}
 For every tested fold number $k \in \{5,\ldots,24,\, 25,\, 50,\, 100\}$,
 the curve $\gamma_k$ is a simple arc in the
 $(\delta,s_2)$-plane.  Specifically:
@@ -3032,9 +3170,9 @@ alignment with the $s_2$-axis as $\delta \to 0$.
 \end{observation}
 
 
-%% ═════════════════════════════════════════════════════════════════════
+%% Ã¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢Â
 \section{Retraction Form Validation}\label{sec:retraction}
-%% ═════════════════════════════════════════════════════════════════════
+%% Ã¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢Â
 
 \subsection{The retraction form of Burstall et al.}
 \label{sec:retraction-theory}
@@ -3135,9 +3273,9 @@ $k$ & R1 (closure) & R2 (cross) & R3 (exact) & R4 (purity) & R5 (Procr.) \\
 \end{remark}
 
 
-%% ═════════════════════════════════════════════════════════════════════
+%% Ã¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢Â
 \section{Open Problems and Conclusions}\label{sec:open}
-%% ═════════════════════════════════════════════════════════════════════
+%% Ã¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢Â
 
 \subsection{Summary of results}
 We have:
@@ -3195,7 +3333,7 @@ We have:
   $A^2 = 2\tilde Q_2^2\,\Delta s^2 / (Z_0\,\tilde Q_2'\,Q_3)$,
   verified to $6$~ppm, and derives the leading two terms of
   the expansion with numerically validated $\Oo(k^{-2})$ remainder
-  (\cref{prop:rigorous-asymp}).  Extending the formal
+  (\cref{obs:rigorous-asymp}).  Extending the formal
   derivation to cover the numerically observed $c_3/k^2$
   correction (\cref{obs:c3}) requires bounding the
   $\Oo(\delta^4)$ contributions to the period integral---a
@@ -3262,7 +3400,7 @@ We have:
   lambda function is numerically matched by an anharmonic transform of
   the branch-point cross-ratio.
   The real part $\Real\,\tau_{\mathrm{spec}} = -1/2$ is
-  accounted for conditionally in \cref{prop:tau-univ}.
+  accounted for conditionally in \cref{cond:tau-univ}.
   The factorization $A^2 = F_{\mathrm{loc}} \times
   F_{\mathrm{glob}}$ (\cref{eq:A2-formula}) mirrors
   Gavrylenko--Lisovyy $\tau$-function
@@ -3325,7 +3463,7 @@ We have:
   ($A^2/\Delta s \approx 3.1777$ at that reference $k$),
   suggesting the spectral gap $\Delta s = s_2 - s_1$ as the
   natural normalization.  A partial algebraic explanation is
-  the identity (\cref{obs:gauge-invariant}): $\tilde Q_2(s_2)$ depends
+  the identity (\cref{rem:gauge-invariant}): $\tilde Q_2(s_2)$ depends
   only on~$s_2$ (not on~$s_1$), providing the dominant cancellation.
   \emph{Status: partially explored.}
 
@@ -3368,9 +3506,9 @@ the Bonnet moduli space carries richer integrable structure than
 is apparent from the periodicity conditions alone.
 
 
-%% ═════════════════════════════════════════════════════════════════════
+%% Ã¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢Â
 %% APPENDICES
-%% ═════════════════════════════════════════════════════════════════════
+%% Ã¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢Â
 \appendix
 
 \section{Evaluated Constants}\label{app:constants}
@@ -3459,12 +3597,12 @@ The principal data products used in this version of the paper are:
 \item \path{results/phase15_asymptotic/full_series_k3_1000.json}:
   the $998$ archived closure seeds,
 \item \path{results/phase15_asymptotic/critical_recheck/}:
-  residual re-solve audit for the $108$ critical rows of the archived
-  $998$-seed branch file,
+  residual re-solve audit for the $48$ rows of the archived
+  $998$-seed branch file with residual above $10^{-10}$,
 \item \path{data/high_precision_checkpoints.json}:
   archived $120$-seed high-precision checkpoint set used for the
   Richardson extrapolation and the finite checkpoint validation in
-  \cref{thm:asymptotic,obs:rigorous-asymp},
+  \cref{valid:asymptotic,obs:rigorous-asymp},
 \item \path{paper/figures/*.pdf}: manuscript figures,
 \item \path{results/B3/finite_certificate/}: exact-rational finite
   root-topology certificates for the archived B3 seed and sweep data,
@@ -3501,11 +3639,11 @@ public release should be recorded in the accompanying release tag or
 archive manifest.
 
 
-%% ═════════════════════════════════════════════════════════════════════
+%% Ã¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢Â
 %% APPENDIX C: Formal Asymptotics with Numerical Verification
-%% ═════════════════════════════════════════════════════════════════════
+%% Ã¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢Â
 
-\section{Formal asymptotics for \texorpdfstring{$\delta = A/\!\sqrt{k}$}{δ=A/√k}}%
+\section{Formal asymptotics for \texorpdfstring{$\delta = A/\!\sqrt{k}$}{ÃŽÂ´=A/Ã¢Ë†Å¡k}}%
 \label{app:rigorous}
 
 This appendix records the three estimates announced
@@ -3533,7 +3671,7 @@ where
 \end{align}
 we have $Z_0^2 = P + M^2$ (at $\delta=0$), and
 the cancellation of $s_1$-dependent terms at $s = s_2$
-(\cref{obs:gauge-invariant}) follows from
+(\cref{rem:gauge-invariant}) follows from
 $P\,s_2^2 - 2M\,s_2$
 $= U^{-2}(2U_1' s_2^3 - U_2 s_2^2 - 2U' s_2)$.
 
@@ -4033,7 +4171,6 @@ validations described in
 
 \begin{observation}[Checkpoint validation of the numerical remainder]
 \label{obs:rigorous-asymp}
-\label{prop:rigorous-asymp}
 For the computed reference branch at
 $s_1=-8.5$, $\tau=\tfrac12+0.3205128205\,\ii$, the local expansion of
 \cref{thm:local-high-fold-branch} is numerically realized on the
@@ -4093,9 +4230,9 @@ The author reports no competing interests.
 The complete codebase and the $998$-seed dataset are available at
 \href{https://github.com/aconsciousfractal/Compact-Bonnet-Pairs-for-k-fold-Tori}{the manuscript repository}.
 
-%% ═════════════════════════════════════════════════════════════════════
+%% Ã¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢Â
 %% BIBLIOGRAPHY
-%% ═════════════════════════════════════════════════════════════════════
+%% Ã¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢Â
 
 \begin{thebibliography}{99}
 

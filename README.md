@@ -33,7 +33,7 @@
 │   ├── export_C2_raw_grid_audit.py
 │   ├── generate_figures.py             # Regenerate paper figures  →  paper/figures/
 │   └── compute_constants.py            # Print spectral coefficients (Appendix A)
-├── tests/               # Pytest suite (≈ 120 tests)
+├── tests/               # Pytest suite (153 tests)
 │   ├── test_theta.py            # Theta / elliptic / Weierstrass / quaternion primitives
 │   ├── test_isothermic.py       # Torus generation, topology, isothermic cross-ratio
 │   ├── test_bonnet_pair.py      # Bonnet pair, isometry, mean curvature, Procrustes
@@ -41,7 +41,7 @@
 │   ├── test_perturbation.py     # Theorem 9 perturbation layer
 │   └── test_retraction.py       # Retraction-form validation gate
 ├── paper/
-│   ├── Compact Bonnet Pairs for k-fold Tori.tex
+│   ├── compact_bonnet_pairs_k_fold_tori.tex
 │   └── figures/                 # Publication figures (PDF)
 ├── results/
 │   ├── phase15_asymptotic/      # Canonical paper-facing branch archive
@@ -74,7 +74,7 @@ pip install -r requirements.txt
 # Run the test suite
 python -m pytest tests/ -v
 
-# Reproduce the full k = 3…1000 dataset (≈ 20 min)
+# Reproduce the full k = 3…1000 dataset
 python scripts/run_full_series.py
 
 # Regenerate paper figures
@@ -112,7 +112,7 @@ python scripts/generate_figures.py
    coefficients tabulated in Appendix A.
 
 6. **Paper** — From `paper/`, run:
-   `pdflatex -interaction=nonstopmode -halt-on-error "Compact Bonnet Pairs for k-fold Tori.tex"`
+   `pdflatex -interaction=nonstopmode -halt-on-error compact_bonnet_pairs_k_fold_tori.tex`
    twice (or use an equivalent multi-pass LaTeX toolchain).
 
 See `REPRODUCE.md` for the paper-facing artifact map and exact commands.

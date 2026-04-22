@@ -1,4 +1,20 @@
-"""Compute spectral coefficients for paper Appendix A."""
+"""Compute spectral coefficients for paper Appendix A.
+
+The Lame-Riccati coefficients (R, U, U', U_1', U_2) are real on the
+rhombic lattice tau = 1/2 + i*lambda by Proposition prop:spectral-reality
+(see paper sec:theta-reality): common q^{1/4}-phase factors cancel from
+every defining ratio, and the theta_3/theta_4 combination in U_2 is real
+by the conjugate-swap identity theta_4(z) = conj(theta_3(z)) for z real.
+The float(np.real(...)) casts applied below to R, U, U', U_1', U_2
+therefore strip only a machine-epsilon imaginary residue.
+
+The float(np.real(...)) casts on the theta constants theta_2(0),
+theta_3(0), theta_4(0), theta_1'(0) report the real parts of the
+complex theta values; these are the entries labelled "Real-normalized
+theta-j datum" in Appendix A and are a tabulation convention, not the
+inputs to the spectral-curve calculation (which uses the full complex
+theta values and obtains reality by the p-factor cancellation above).
+"""
 import sys
 import os
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))

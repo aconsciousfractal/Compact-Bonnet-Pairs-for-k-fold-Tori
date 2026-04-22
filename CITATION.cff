@@ -5,7 +5,7 @@ type: software
 authors:
   - family-names: Babanskyy
     given-names: Oleksiy
-    orcid: ""
+    orcid: "https://orcid.org/0009-0001-6176-6208"
 repository-code: "https://github.com/aconsciousfractal/Compact-Bonnet-Pairs-for-k-fold-Tori"
 license: MIT
 date-released: "2026-04-17"

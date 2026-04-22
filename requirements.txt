@@ -1,5 +1,10 @@
-numpy>=1.24
-scipy>=1.10
-mpmath>=1.3
-matplotlib>=3.7
-pytest>=7.0
+# Runtime dependencies for Compact Bonnet Pairs for k-fold Tori.
+# Lower bounds reflect the APIs actually used; upper bounds are a
+# conservative ceiling on the family tested during the 2026-04-17 release.
+# Tested with Python 3.10, 3.11, 3.12 on Windows 10/11 and Ubuntu 22.04.
+
+numpy>=1.24,<3.0        # array algebra, linear algebra, random seeds
+scipy>=1.10,<2.0        # optimize.root (Newton solver), elliptic integrals
+mpmath>=1.3,<2.0        # 40-digit Jacobi theta evaluation, Richardson tail
+matplotlib>=3.7,<4.0    # figure generation (scripts/generate_figures.py)
+pytest>=7.0,<9.0        # test suite (tests/)
