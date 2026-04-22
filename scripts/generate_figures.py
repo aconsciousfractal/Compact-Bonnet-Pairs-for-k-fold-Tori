@@ -3,9 +3,9 @@ Generate publication figures for the Bonnet pairs paper.
 
 Produces:
   figures/delta_vs_k.pdf       — log-log plot of δ(k)
-  figures/running_exponent.pdf — α(k) convergence to -0.5
+  figures/running_exponent.pdf — α(k) convergence to 0.5
   figures/richardson.pdf       — A_k = δ√k convergence
-  figures/procrustes.pdf       — Procrustes decay with floor
+  figures/procrustes.pdf       — Procrustes decay with empirical offset
 
 Requires: matplotlib, numpy, json
 """
@@ -20,20 +20,31 @@ import numpy as np
 
 plt.rcParams.update({
     "text.usetex": False,
-    "font.family": "serif",
+    "font.family": "DejaVu Serif",
     "font.size": 10,
     "axes.labelsize": 11,
     "legend.fontsize": 9,
     "figure.figsize": (5.5, 4.0),
     "figure.dpi": 300,
+    "pdf.fonttype": 42,
+    "ps.fonttype": 42,
     "savefig.bbox": "tight",
     "savefig.pad_inches": 0.05,
 })
 
 # ── Load data ──────────────────────────────────────────────────────
-DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "data")
-with open(os.path.join(DATA_DIR, "full_series_k3_1000.json")) as f:
-    raw = json.load(f)
+BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+DATA_CANDIDATES = [
+    os.path.join(BASE_DIR, "results", "phase15_asymptotic", "full_series_k3_1000.json"),
+    os.path.join(BASE_DIR, "data", "full_series_k3_1000.json"),
+]
+for data_path in DATA_CANDIDATES:
+    if os.path.exists(data_path):
+        with open(data_path) as f:
+            raw = json.load(f)
+        break
+else:
+    raise FileNotFoundError("No full_series_k3_1000.json found in canonical results or compatibility mirror")
 
 entries = raw if isinstance(raw, list) else raw.get("seeds", raw.get("data", []))
 ks = np.array([e["k"] for e in entries], dtype=float)
@@ -57,7 +68,7 @@ ax.legend()
 ax.set_title(r"$\delta_k$ vs $k$ (log–log)")
 fig.savefig(os.path.join(FIG_DIR, "delta_vs_k.pdf"))
 plt.close(fig)
-print("  → delta_vs_k.pdf")
+print("  generated delta_vs_k.pdf")
 
 
 # ── Figure 2: Running exponent ─────────────────────────────────────
@@ -74,15 +85,15 @@ if len(alpha) > win:
     k_smooth = np.convolve(k_mid, kernel, mode="valid")
     ax.plot(k_smooth, alpha_smooth, "-", lw=1.5, color="C1",
             label=f"Running mean (window {win})")
-ax.axhline(-0.5, ls="--", color="C3", lw=1, label=r"$\alpha = -1/2$")
+ax.axhline(0.5, ls="--", color="C3", lw=1, label=r"$\alpha = 1/2$")
 ax.set_xlabel(r"$k$")
 ax.set_ylabel(r"Running exponent $\alpha(k)$")
-ax.set_ylim(-0.55, -0.40)
+ax.set_ylim(0.40, 0.55)
 ax.legend()
-ax.set_title(r"Running exponent $\alpha(k) \to -1/2$")
+ax.set_title(r"Running exponent $\alpha(k) \to 1/2$")
 fig.savefig(os.path.join(FIG_DIR, "running_exponent.pdf"))
 plt.close(fig)
-print("  → running_exponent.pdf")
+print("  generated running_exponent.pdf")
 
 
 # ── Figure 3: Richardson (A_k = δ√k) ──────────────────────────────
@@ -99,25 +110,29 @@ ax.legend()
 ax.set_title(r"Convergence of $\delta_k\sqrt{k} \to A$")
 fig.savefig(os.path.join(FIG_DIR, "richardson.pdf"))
 plt.close(fig)
-print("  → richardson.pdf")
+print("  generated richardson.pdf")
 
 
-# ── Figure 4: Procrustes decay (synthetic from fit) ────────────────
-k_proc = np.arange(3, 201)
-d_proc = 3.0/64.0 + 0.216 / k_proc**1.236
+# ── Figure 4: Procrustes decay (paper table + fit) ─────────────────
+k_proc_data = np.array([3, 5, 7, 10, 20, 50, 100, 500], dtype=float)
+d_proc_data = np.array([0.106, 0.077, 0.067, 0.059, 0.052, 0.048, 0.047, 0.046], dtype=float)
+k_proc_fit = np.linspace(3, 500, 800)
+d_proc_fit = 3.0/64.0 + 0.216 / k_proc_fit**1.236
 
 fig, ax = plt.subplots()
-ax.plot(k_proc, d_proc, "-", lw=1.5, color="C0",
+ax.plot(k_proc_data, d_proc_data, "o", ms=4, color="C0",
+        label="Eight tested seeds")
+ax.plot(k_proc_fit, d_proc_fit, "--", lw=1.25, color="C1",
         label=r"$d_P = 3/64 + 0.216\,k^{-1.236}$")
 ax.axhline(3.0/64.0, ls="--", color="C3", lw=1,
-           label=r"Floor $= 3/64$")
+           label=r"Constant term $= 3/64$")
 ax.set_xlabel(r"$k$")
 ax.set_ylabel(r"Procrustes disparity $d_P$")
 ax.legend()
-ax.set_title("Procrustes decay with geometric floor")
+ax.set_title("Procrustes disparity for the tested seeds")
 fig.savefig(os.path.join(FIG_DIR, "procrustes.pdf"))
 plt.close(fig)
-print("  → procrustes.pdf")
+print("  generated procrustes.pdf")
 
 
 print(f"\nAll figures saved to {FIG_DIR}")

@@ -1,11 +1,11 @@
 # Compact Bonnet Pairs for *k*-fold Tori
 
-**998 Computed Seeds and a Validated *k*<sup>−1/2</sup> Asymptotic Law**
+**998 Computed Seeds and a High-Fold *k*<sup>−1/2</sup> Asymptotic Law**
 
 > Companion code and data for the paper by O. Babanskyy (2026).
 > Extends the Bobenko–Hoffmann–Sageman-Furnas construction to all fold
-> numbers *k* = 3, …, 1000, yielding 998 compact Bonnet-pair seeds verified
-> by a four-gate numerical protocol.
+> numbers *k* = 3, …, 1000, yielding 998 compact Bonnet-pair seeds supported
+> by the archived branch file and its critical-row residual recheck.
 
 ---
 
@@ -25,10 +25,14 @@
 │   ├── theorem9_perturbation.py # Theorem 9 perturbative deformation layer
 │   ├── retraction_form.py       # Retraction-form validation (§12)
 │   └── analytic_derivatives.py  # Analytic derivative cross-checks
-├── scripts/             # Reproducibility runners
-│   ├── run_full_series.py       # Solve k = 3…1000  →  data/full_series_k3_1000.json
-│   ├── generate_figures.py      # Regenerate all paper figures  →  paper/figures/
-│   └── compute_constants.py     # Print spectral coefficients (Appendix A)
+├── scripts/             # Reproducibility runners and compatibility shims
+│   ├── run_full_series.py              # Solve k = 3…1000  →  results/phase15_asymptotic/
+│   ├── export_phase15_critical_recheck.py
+│   ├── export_B3_certificate_inputs.py
+│   ├── export_B4_high_precision_seed_data.py
+│   ├── export_C2_raw_grid_audit.py
+│   ├── generate_figures.py             # Regenerate paper figures  →  paper/figures/
+│   └── compute_constants.py            # Print spectral coefficients (Appendix A)
 ├── tests/               # Pytest suite (≈ 120 tests)
 │   ├── test_theta.py            # Theta / elliptic / Weierstrass / quaternion primitives
 │   ├── test_isothermic.py       # Torus generation, topology, isothermic cross-ratio
@@ -37,10 +41,16 @@
 │   ├── test_perturbation.py     # Theorem 9 perturbation layer
 │   └── test_retraction.py       # Retraction-form validation gate
 ├── paper/
-│   ├── main.tex                 # Full LaTeX source
+│   ├── Compact Bonnet Pairs for k-fold Tori.tex
 │   └── figures/                 # Publication figures (PDF)
+├── results/
+│   ├── phase15_asymptotic/      # Canonical paper-facing branch archive
+│   ├── B3/                      # Finite-certificate layer
+│   ├── B4/                      # High-precision spectral audit layer
+│   ├── C2/                      # Raw-grid normalization audit layer
+│   └── obj/                     # Legacy / auxiliary visualization outputs
 ├── data/
-│   └── full_series_k3_1000.json # Precomputed dataset (998 seeds)
+│   └── full_series_k3_1000.json # Compatibility mirror of the main branch file
 ├── requirements.txt
 ├── CITATION.cff
 └── LICENSE                      # MIT
@@ -85,16 +95,27 @@ python scripts/generate_figures.py
 
 1. **Dataset** — `python scripts/run_full_series.py` solves the Theorem 7
    closing conditions for every fold *k* = 3, …, 1000 and writes
-   `data/full_series_k3_1000.json`.
+   `results/phase15_asymptotic/full_series_k3_1000.json`
+   (with a compatibility mirror in `data/full_series_k3_1000.json`).
 
-2. **Figures** — `python scripts/generate_figures.py` reads the dataset and
+2. **Phase-15 recheck** — `python scripts/export_phase15_critical_recheck.py`
+   rebuilds the critical-row residual audit for the 998-seed branch.
+
+3. **Figures** — `python scripts/generate_figures.py` reads the dataset and
    produces the four publication figures in `paper/figures/`.
 
-3. **Constants** — `python scripts/compute_constants.py` prints the spectral
+4. **B3/B4/C2 paper audits** — run the three export scripts listed in
+   `REPRODUCE.md` to rebuild the paper-cited B3 finite-certificate layer,
+   B4 high-precision spectral audit, and C2 raw-grid audit.
+
+5. **Constants** — `python scripts/compute_constants.py` prints the spectral
    coefficients tabulated in Appendix A.
 
-4. **Paper** — Compile with `pdflatex paper/main.tex` (or your preferred
-   LaTeX toolchain).
+6. **Paper** — From `paper/`, run:
+   `pdflatex -interaction=nonstopmode -halt-on-error "Compact Bonnet Pairs for k-fold Tori.tex"`
+   twice (or use an equivalent multi-pass LaTeX toolchain).
+
+See `REPRODUCE.md` for the paper-facing artifact map and exact commands.
 
 ## Tests
 
@@ -122,7 +143,7 @@ The test suite covers:
 @software{babanskyy2026bonnet,
   author    = {Babanskyy, Oleksiy},
   title     = {Compact Bonnet Pairs for k-fold Tori:
-               998 Seeds and a Validated Asymptotic Law},
+               998 Computed Seeds and a High-Fold k^{-1/2} Asymptotic Law},
   year      = {2026},
   url       = {https://github.com/aconsciousfractal/Compact-Bonnet-Pairs-for-k-fold-Tori},
   license   = {MIT}

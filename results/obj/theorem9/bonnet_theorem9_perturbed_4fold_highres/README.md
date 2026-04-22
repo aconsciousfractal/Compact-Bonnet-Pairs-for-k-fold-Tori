@@ -1,5 +1,9 @@
 # Bonnet Theorem 9 Perturbative 4-fold - High-Res Final
 
+Auxiliary / legacy visualization artifact.  This directory is not part of the
+canonical paper-facing reproduction path documented in `REPRODUCE.md`; it is
+kept as a high-resolution Theorem 9 visualization/reference case.
+
 ## Summary
 
 This directory contains the current high-resolution reference case for the first perturbative 4-fold Bonnet example beyond the spherical Theorem 7 family.

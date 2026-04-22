@@ -121,7 +121,7 @@
         "scale_ratio": 1.000453165718839,
         "is_non_congruent": true
       },
-      "output_dir": "P:\\GitHub_puba\\HAN\\FRAMEWORK\\04-SOFTWARE\\PAPP\\projects\\Bonnet's Problem\\results\\phase85_canonical_candidates\\paper_3fold",
+      "output_dir": "results/obj/paper_figures/paper_3fold",
       "files": [
         "paper_3fold_f_plus.obj",
         "paper_3fold_f_minus.obj",
@@ -237,7 +237,7 @@
         "scale_ratio": 1.0004755095424689,
         "is_non_congruent": true
       },
-      "output_dir": "P:\\GitHub_puba\\HAN\\FRAMEWORK\\04-SOFTWARE\\PAPP\\projects\\Bonnet's Problem\\results\\phase85_canonical_candidates\\paper_3fold_forward_2",
+      "output_dir": "results/obj/paper_figures/paper_3fold_forward_2",
       "files": [
         "paper_3fold_forward_2_f_plus.obj",
         "paper_3fold_forward_2_f_minus.obj",
@@ -358,7 +358,7 @@
         "scale_ratio": 1.0002139056968944,
         "is_non_congruent": true
       },
-      "output_dir": "P:\\GitHub_puba\\HAN\\FRAMEWORK\\04-SOFTWARE\\PAPP\\projects\\Bonnet's Problem\\results\\phase85_canonical_candidates\\paper_4fold",
+      "output_dir": "results/obj/paper_figures/paper_4fold",
       "files": [
         "paper_4fold_f_plus.obj",
         "paper_4fold_f_minus.obj",

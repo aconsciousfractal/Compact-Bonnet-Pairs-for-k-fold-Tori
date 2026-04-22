@@ -5,6 +5,9 @@ Usage (from repo root):
     python scripts/run_full_series.py
 
 Output:
+    results/phase15_asymptotic/full_series_k3_1000.json
+
+Compatibility mirror:
     data/full_series_k3_1000.json
 """
 
@@ -27,9 +30,13 @@ S2_INIT = 2.50
 
 
 def main():
-    out_dir = Path(__file__).resolve().parent.parent / "data"
+    project = Path(__file__).resolve().parent.parent
+    out_dir = project / "results" / "phase15_asymptotic"
     out_dir.mkdir(parents=True, exist_ok=True)
     out_path = out_dir / "full_series_k3_1000.json"
+    mirror_dir = project / "data"
+    mirror_dir.mkdir(parents=True, exist_ok=True)
+    mirror_path = mirror_dir / "full_series_k3_1000.json"
 
     results = []
     delta_guess = DELTA_INIT
@@ -72,9 +79,12 @@ def main():
 
     with open(out_path, "w", encoding="utf-8") as f:
         json.dump(results, f, indent=1)
+    with open(mirror_path, "w", encoding="utf-8") as f:
+        json.dump(results, f, indent=1)
 
     elapsed = time.time() - t0
     print(f"\nDone: {len(results)} seeds written to {out_path}")
+    print(f"Mirror: {mirror_path}")
     print(f"Failures: {len(failures)} — {failures}")
     print(f"Total time: {elapsed:.1f}s")
 

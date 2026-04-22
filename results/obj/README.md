@@ -36,7 +36,7 @@ Top-level files:
 - `atlas_summary.csv` — tabular overview of all 240 entries.
 - `export_checkpoint.json` — Colab export checkpoint.
 
-**Generator:** `scripts/run_colab_export_atlas.py` (designed to run on
+**Generator:** `scripts/legacy/run_colab_export_atlas.py` (designed to run on
 Google Colab; see docstring for instructions).
 
 ---
@@ -70,8 +70,8 @@ Files per variant: `base`, `f_minus`, `f_minus_flux`, `f_plus`, `f_plus_flux`.
 The top-level JSON files are validation diagnostics (Lemma 9 sweep,
 frame analysis, comparative metrics).
 
-**Generator:** `scripts/run_phase11_visual_obj.py` +
-`scripts/run_phase11_flux_only.py` (flux overlay).
+**Generator:** `scripts/legacy/run_phase11_visual_obj.py` +
+`scripts/legacy/run_phase11_flux_only.py` (flux overlay).
 
 ---
 
@@ -95,10 +95,10 @@ Each k-directory contains:  `base.obj`, `base.mtl`, `base_flux.obj`,
 metadata JSON files.
 
 These surfaces demonstrate the asymptotic scaling law
-δ(k) = A/√k · (1 − c₁/k + c₂/k²) established in the paper (§ 6).
+δ(k) = A/√k · (1 − c₁/k + c₃/k²) established in the paper (§ 6).
 
-**Generator:** `scripts/generate_obj.py` (Bonnet pair + flux) and
-`scripts/generate_base_obj.py` (pre-Bonnet base torus).
+**Generator:** `scripts/legacy/generate_obj.py` (Bonnet pair + flux) and
+`scripts/legacy/generate_base_obj.py` (pre-Bonnet base torus).
 
 ---
 
@@ -117,7 +117,7 @@ Best-quality 3-fold and 4-fold Bonnet pairs selected through the Phase 8.5
 forcing and continuation pipeline.  Each sub-directory has `f_plus.obj`,
 `f_minus.obj`, `flux.obj`, and `material.mtl`.
 
-**Generator:** `scripts/run_phase85_export_canonical_candidates.py`.
+**Generator:** `scripts/legacy/run_phase85_export_canonical_candidates.py`.
 
 ---
 
@@ -137,10 +137,10 @@ Each sub-directory has `f_plus.obj`, `f_minus.obj`, `flux.obj`,
 `material.mtl`, and `metadata.json` (highres adds a `report.json`).
 
 **Generators:**
-- `scripts/generate_flux_theorem9_perturbed.py` (3-fold)
-- `scripts/generate_flux_theorem9_perturbed_4fold.py` (4-fold standard)
-- `scripts/generate_flux_theorem9_perturbed_4fold_visual.py` (4-fold visual)
-- `scripts/run_phase85_highres_final_4fold.py` (4-fold high-resolution)
+- `scripts/legacy/generate_flux_theorem9_perturbed.py` (3-fold)
+- `scripts/legacy/generate_flux_theorem9_perturbed_4fold.py` (4-fold standard)
+- `scripts/legacy/generate_flux_theorem9_perturbed_4fold_visual.py` (4-fold visual)
+- `scripts/legacy/run_phase85_highres_final_4fold.py` (4-fold high-resolution)
 
 ---
 
@@ -155,21 +155,29 @@ Any Wavefront OBJ viewer works.  Recommended:
 Flux wireframes (`*_flux.obj`) use per-vertex RGB colour to encode
 Gaussian curvature on a blue → red scale.
 
+## Status
+
+This `results/obj/` tree is an auxiliary / legacy visualization layer.
+It is not the canonical paper-facing reproducibility archive, which now lives
+under the top-level `results/` phase/audit directories cited in the paper and
+documented in `REPRODUCE.md`.
+
 ## Regenerating
 
 All meshes can be regenerated from the source code.  From the repo root:
 
 ```bash
 # High-k Bonnet pairs (k = 50–1000)
-python scripts/generate_obj.py
+python scripts/legacy/generate_obj.py
 
 # Base isothermic tori (pre-Bonnet)
-python scripts/generate_base_obj.py
+python scripts/legacy/generate_base_obj.py
 
 # Flux visualisation (3 showcase pairs)
-python scripts/generate_flux_obj.py
+python scripts/legacy/generate_flux_obj.py
 ```
 
-The atlas requires Google Colab (see `scripts/run_colab_export_atlas.py`).
-The remaining scripts require the Theorem 9 perturbation module, which
-must be copied from the source project (see Generator references above).
+The atlas requires Google Colab (see `scripts/legacy/run_colab_export_atlas.py`).
+The remaining generators are kept as repository-local legacy/auxiliary tools.
+Their script paths should be read relative to this repository, not to the old
+source workspace.

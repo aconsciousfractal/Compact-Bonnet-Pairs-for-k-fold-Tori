@@ -1,7 +1,7 @@
 {
   "version": "17.1",
   "date": "2026-04-04",
-  "source": "P:\\GitHub_puba\\HAN\\FRAMEWORK\\04-SOFTWARE\\PAPP\\projects\\Bonnet's Problem\\results\\phase11_higher_fold\\lemma9_sweep.json",
+  "source": "data/s1_sweep.json",
   "k5": {
     "label": "k=5",
     "n_points": 31,
