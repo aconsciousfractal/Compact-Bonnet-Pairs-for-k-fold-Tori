@@ -529,7 +529,12 @@ $Q(s)$ bounding the real oval of integration, and set
 $\mathcal V = [s^-, s^+]$.  In the notation of BHS Eq.~(82)--(83),
 this is the pair denoted $s_1^-, s_1^+$: the BHS subscript labels the
 real oval, not the fixed gauge parameter $s_1$ used in the present
-paper.
+paper.\footnote{Throughout this paper $s_1 = -8.5$ is a fixed real
+  \emph{gauge} parameter (used to eliminate the translational freedom
+  of the Riccati flow), while the symbols $s^-, s^+$ denote the two
+  real roots of $Q$ bounding the oval $\mathcal V$.  The BHS convention
+  $s_1^\pm$ for the same roots is not used in the body of the present
+  paper; the subscript $1$ on $s_1$ always refers to the gauge.}
 
 \subsection{Theta-half periodicity}\label{sec:theta-half}
 
@@ -794,7 +799,24 @@ All $998$ seeds converge; for each~$k$ we obtain a
 solution on the tracked branch.
 No bifurcations, branch jumps, or
 failures are detected in the archived $k = 3,\ldots,1000$
-continuation.
+continuation.  Concretely, the following numerical non-bifurcation
+criteria hold uniformly on the archived series:
+\begin{enumerate}[label=\upshape(\roman*),nosep]
+\item \emph{Monotone decay.}  $\delta_{k+1} < \delta_k$ for every
+  $k\in\{3,\ldots,999\}$; no sign change or local minimum is observed.
+\item \emph{Uniform Newton success.}  Every archived row has residual
+  below $5.35\times 10^{-10}$ and solver function-evaluation count
+  $\texttt{nfev}\ge 8$, with no failed or restarted secant step along
+  the $k\mapsto k+1$ continuation.
+\item \emph{Non-degenerate Jacobian.}  The period-map Jacobian
+  $\partial(F_{\mathrm{rat}},F_{\mathrm{ax}})/\partial(\delta,s_2)$ is
+  numerically non-singular throughout the archived sweep (the residual
+  column of \cref{tab:first-seeds} and of the final-seeds table above
+  tracks this via the Newton-step control).
+\end{enumerate}
+These are numerical criteria rather than a rigorous proof of
+branch identity (which remains open; see
+\cref{rem:B2-status} in \cref{app:rigorous}).
 \Cref{fig:delta-vs-k} shows $\delta_k$ versus~$k$
 on a log--log scale: the data collapse onto a straight line with
 slope $-0.5$, the first visual evidence for \cref{valid:asymptotic}.
@@ -1797,7 +1819,7 @@ cross-ratio
   \label{eq:CR}
 \end{equation}
 
-\paragraph{Root topology and cross-ratio layer.}
+\paragraph{Root topology and cross-ratio layer (theorem-level and certificate-level).}
 
 \begin{theorem}[Root topology on the local high-fold branch]
 \label{thm:large-fold-root-topology}
@@ -2549,7 +2571,7 @@ the exact coefficient.  Genus-$2$ data are therefore not needed
 for the explanation.
 \end{remark}
 
-\paragraph{Barrier and monodromy remarks.}
+\paragraph{Barrier and monodromy remarks (remark-level).}
 
 \begin{remark}[Two independent obstructions beyond genus~$1$]
 \label{rem:umbilical-obstruction}
@@ -2700,7 +2722,7 @@ Cayley cubic, not in the standard connection exponent.
 \end{remark}
 
 \paragraph{Spectral modulus, corrected lambda transform, and
-  finite-data audit.}
+  finite-data audit (conjecture-, conditional-, and audit-level).}
 
 \begin{conjecture}[Spectral modular parameter]
 \label{conj:tau-spec}
@@ -3634,9 +3656,15 @@ Python~3.10+ with \texttt{numpy}, \texttt{scipy}, and \texttt{mpmath} as the
 core runtime requirements; figure generation additionally needs
 \texttt{matplotlib}.  The archived high-precision computations use
 $40$-digit or higher \texttt{mpmath} arithmetic with fixed-order
-Gauss--Legendre quadrature.  The exact repository revision used for a
-public release should be recorded in the accompanying release tag or
-archive manifest.
+Gauss--Legendre quadrature.
+
+\noindent\textbf{Repository revision.}
+The numerical artifacts, figures, and tables quoted in this version of
+the manuscript were produced at repository revision
+\texttt{af6800542e1e46b77bdd1ac1fe826d2dce974ac0} (short hash
+\texttt{af68005}), corresponding to the post-audit close-out of
+2026-04-22.  The SHA is mirrored in \path{REPRODUCE.md} and in
+\path{CHANGELOG.md}.
 
 
 %% Ã¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢Â
@@ -3676,7 +3704,9 @@ $P\,s_2^2 - 2M\,s_2$
 $= U^{-2}(2U_1' s_2^3 - U_2 s_2^2 - 2U' s_2)$.
 
 \smallskip
-At $\delta = 0$ with $s_2 = s_{2,\infty}$:
+At $\delta = 0$ with $s_2 = s_{2,\infty}$ (equivalently, at the
+$k\to\infty$ axial limit of the tested branch, where $C_2 =
+s_{2,\infty}\approx 7.29962$):
 $\tilde Q_2(s_{2,\infty}) = 2033.2$, \;
 $\tilde Q_2' = 2Ps_2 - 2M = 257.0$, \;
 $\tilde Q_2'' = 2P = -5.676$.

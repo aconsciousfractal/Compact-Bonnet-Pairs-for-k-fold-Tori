@@ -6,6 +6,14 @@ This guide records the paper-facing commands and canonical artifact paths for
 
 inside this repository.
 
+## Repository revision
+
+The numerical artifacts, figures, and tables quoted in the current
+version of the manuscript were produced at repository revision
+`af6800542e1e46b77bdd1ac1fe826d2dce974ac0` (short hash `af68005`),
+corresponding to the post-audit close-out of 2026-04-22. The same
+SHA is recorded in Appendix B of the paper and in `CHANGELOG.md`.
+
 ## Environment
 
 - Python 3.10+

@@ -88,7 +88,7 @@ if len(alpha) > win:
 ax.axhline(0.5, ls="--", color="C3", lw=1, label=r"$\alpha = 1/2$")
 ax.set_xlabel(r"$k$")
 ax.set_ylabel(r"Running exponent $\alpha(k)$")
-ax.set_ylim(0.40, 0.55)
+ax.set_ylim(0.47, 0.53)
 ax.legend()
 ax.set_title(r"Running exponent $\alpha(k) \to 1/2$")
 fig.savefig(os.path.join(FIG_DIR, "running_exponent.pdf"))
